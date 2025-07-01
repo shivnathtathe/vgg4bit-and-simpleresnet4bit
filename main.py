@@ -51,7 +51,7 @@ class Conv4bit(nn.Module):
         w_ste = self.weight + (w_quant - self.weight).detach()
         return F.conv2d(x, w_ste, self.bias, self.stride, self.padding)
 
-# ============ 4-bit Linear Layer (same as before) ============
+# 4-bit Linear Layer
 class Linear4bit(nn.Module):
     def __init__(self, in_features, out_features, bias=True):
         super().__init__()
@@ -66,7 +66,7 @@ class Linear4bit(nn.Module):
         w_ste = self.weight + (w_quant - self.weight).detach()
         return F.linear(x, w_ste, self.bias)
 
-# ============ 4-bit VGG-like Network for CIFAR-10 ============
+# 4-bit VGG
 class VGG4bit(nn.Module):
     def __init__(self, num_classes=10):
         super().__init__()
@@ -115,7 +115,7 @@ class VGG4bit(nn.Module):
         x = self.classifier(x)
         return x
 
-# ============ Simple ResNet-style 4-bit Network ============
+#Simple ResNet
 class SimpleResNet4bit(nn.Module):
     def __init__(self, num_classes=10):
         super().__init__()
@@ -162,7 +162,7 @@ class SimpleResNet4bit(nn.Module):
         out = self.fc(out)
         return out
 
-# ============ Quantization-Aware Adam with Warmup ============
+#Quantization-Aware Adam with Warmup
 class QuantAwareAdamW(torch.optim.AdamW):
     def __init__(self, params, lr=0.001, weight_decay=5e-4, grad_clip=1.0):
         super().__init__(params, lr=lr, weight_decay=weight_decay)
@@ -180,7 +180,7 @@ class QuantAwareAdamW(torch.optim.AdamW):
                     if len(p.shape) >= 2:  # Weight matrices
                         p.data = torch.tanh(p.data / 3.0) * 3.0
 
-# ============ Training Functions ============
+#Training Functions
 def train_epoch(model, loader, optimizer, device, epoch):
     model.train()
     total_loss = 0
@@ -228,12 +228,12 @@ def test(model, loader, device):
     accuracy = 100. * correct / len(loader.dataset)
     return test_loss, accuracy
 
-# ============ Main Training Script ============
+#Main Training Script
 def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-    # Data augmentation for CIFAR-10
+   
     transform_train = transforms.Compose([
         transforms.RandomCrop(32, padding=4),
         transforms.RandomHorizontalFlip(),
@@ -282,7 +282,7 @@ def main():
 
     # Training loop
     best_acc = 0
-    for epoch in range(150):  # Less epochs for initial testing
+    for epoch in range(100):
         print(f'\n=== Epoch {epoch+1}/150 (LR: {scheduler.get_last_lr()[0]:.6f}) ===')
 
         train_loss, train_acc = train_epoch(model, train_loader, optimizer, device, epoch)
@@ -319,9 +319,9 @@ def main():
     print(f'\n=== Final Results ===')
     print(f'Best Test Accuracy: {best_acc:.2f}%')
 
-    # Memory comparison
-    float32_memory = total_params * 4 / (1024**2)  # MB
-    int4_memory = total_params * 0.5 / (1024**2)  # MB
+    # Memory comparison in MB
+    float32_memory = total_params * 4 / (1024**2) 
+    int4_memory = total_params * 0.5 / (1024**2)  
     print(f'\nMemory Usage:')
     print(f'Float32: {float32_memory:.2f} MB')
     print(f'Int4: {int4_memory:.2f} MB')
