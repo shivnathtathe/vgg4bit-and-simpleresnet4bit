@@ -157,6 +157,10 @@ The script will prompt you to choose:
 
 2 for VGG4bit (heavier, more accurate)
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]
+(https://colab.research.google.com/drive/1F0HziLzVtOQWFG0efaepXdVisHfHBBJt?usp=sharing)
+
+
 # 📌 Notes  
 - Designed for CIFAR-10. For other datasets, minimal changes to data preprocessing and model input shape are needed.  
 - Best performance observed after 90–120 epochs with cosine annealing LR scheduler.  
