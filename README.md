@@ -34,7 +34,7 @@ This project presents **two custom convolutional neural networks** trained from 
 
 ### Revolutionary 4-bit Training Performance
 
-![Revolutionary 4-bit Training](images/revolutionary_4bit_training.png)
+![Revolutionary 4-bit Training](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/vgg_revolution3.png)
 
 Our 4-bit quantized models achieve remarkable efficiency:
 - **Training Cost**: FREE (using Google Colab) vs $1500 for typical DL setup
@@ -43,7 +43,7 @@ Our 4-bit quantized models achieve remarkable efficiency:
 
 ### Detailed Training Analysis
 
-![Detailed Analysis](images/detailed_analysis.png)
+![Detailed Analysis](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/vgg_per_epocs2.png)
 
 Key observations from training:
 - **Steady accuracy improvement** throughout epochs
@@ -52,7 +52,7 @@ Key observations from training:
 
 ### World's First Achievement: 88.43% Accuracy
 
-![VGG 4-bit Achievement](images/vgg_4bit_achievement.png)
+![VGG 4-bit Achievement](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/vgg_train_vs_test_accuracy.png)
 
 - **Peak accuracy**: 88.43% on CIFAR-10 test set
 - **Model size**: Only 0.39MB (151× smaller than FP32 VGG)
@@ -61,7 +61,7 @@ Key observations from training:
 
 ### Full Training Results
 
-![VGG 4-bit Full Results](images/vgg_4bit_results.png)
+![VGG 4-bit Full Results](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/vgg_train_vs_test_accuracy.pdf)
 
 Performance comparison:
 - VGG4bit (INT4): 88.43% accuracy with 0.39MB
@@ -71,7 +71,7 @@ Performance comparison:
 
 ### Efficiency Breakthrough
 
-![Efficiency Comparison](images/vgg_4bit_efficiency.png)
+![Efficiency Comparison](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/88.47.png)
 
 Training characteristics:
 - **Memory usage**: 59MB (VGG4bit) vs 1500MB (VGG-16 FP32)
@@ -81,13 +81,13 @@ Training characteristics:
 
 ### Sample Predictions
 
-![Sample Predictions](images/sample_predictions.png)
+![Sample Predictions](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/STL-Pred.png)
 
 The 4-bit model demonstrates robust classification capabilities across various CIFAR-10 categories with high confidence scores.
 
 ### Training Progress Visualization
 
-![Training Progress](images/training_progress.png)
+![Training Progress](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/100_STL-10_loss_aacuracy.png)
 
 - Smooth loss convergence
 - Steady accuracy improvement
@@ -95,7 +95,7 @@ The 4-bit model demonstrates robust classification capabilities across various C
 
 ### Training Summary
 
-![Training Summary](images/training_summary.png)
+![Training Summary](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/matrix.png)
 
 Final statistics:
 - **Initial accuracy**: 38.67% → **Final accuracy**: 84.29% (train), 82.58% (test)
@@ -105,7 +105,7 @@ Final statistics:
 
 ### Detailed Training Metrics
 
-![Training Metrics](images/training_metrics.png)
+![Training Metrics](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/train_test_loss.png)
 
 The training shows:
 - Excellent convergence with cosine annealing LR schedule
@@ -113,7 +113,9 @@ The training shows:
 - Stable training after epoch 60
 - Progressive accuracy improvement across training phases
 
----
+### Additional Visualizations
+
+![Download Comparison](https://raw.githubusercontent.com/shivnathtathe/vgg4bit-and-simpleresnet4bit/main/images/download.png)
 
 ## Architecture Comparison
 
