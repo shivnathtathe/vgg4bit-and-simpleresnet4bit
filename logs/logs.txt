@@ -1,0 +1,1967 @@
+Using device: cpu
+
+=== 4-bit Training on CIFAR-10 ===
+Choose model:
+1. SimpleResNet4bit (lighter, faster)
+2. VGG4bit (heavier, potentially more accurate)
+
+Using VGG4bit
+Total parameters: 3,251,018
+
+=== Epoch 1/150 (LR: 0.001000) ===
+  Batch 0/391, Loss: 2.6623, Acc: 10.94%
+  Batch 50/391, Loss: 1.5682, Acc: 32.57%
+  Batch 100/391, Loss: 1.3803, Acc: 37.76%
+  Batch 150/391, Loss: 1.3004, Acc: 41.60%
+  Batch 200/391, Loss: 1.4823, Acc: 44.50%
+  Batch 250/391, Loss: 0.9454, Acc: 46.93%
+  Batch 300/391, Loss: 1.1597, Acc: 48.93%
+  Batch 350/391, Loss: 1.0440, Acc: 50.75%
+Train Loss: 1.3430, Train Acc: 51.99%
+Test Loss: 0.9243, Test Acc: 66.84%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 2/150 (LR: 0.001000) ===
+  Batch 0/391, Loss: 0.9487, Acc: 64.84%
+  Batch 50/391, Loss: 0.8589, Acc: 65.35%
+  Batch 100/391, Loss: 0.9270, Acc: 66.58%
+  Batch 150/391, Loss: 0.9615, Acc: 66.95%
+  Batch 200/391, Loss: 0.8939, Acc: 67.38%
+  Batch 250/391, Loss: 0.9579, Acc: 68.02%
+  Batch 300/391, Loss: 0.8215, Acc: 68.49%
+  Batch 350/391, Loss: 0.6601, Acc: 68.92%
+Train Loss: 0.8759, Train Acc: 69.18%
+Test Loss: 0.8223, Test Acc: 71.46%
+Unique weight values per layer: min=13, max=15, avg=14.8
+
+=== Epoch 3/150 (LR: 0.000999) ===
+  Batch 0/391, Loss: 0.8769, Acc: 64.06%
+  Batch 50/391, Loss: 0.6483, Acc: 72.84%
+  Batch 100/391, Loss: 0.6546, Acc: 73.45%
+  Batch 150/391, Loss: 0.7603, Acc: 73.86%
+  Batch 200/391, Loss: 0.7509, Acc: 73.84%
+  Batch 250/391, Loss: 0.7916, Acc: 74.15%
+  Batch 300/391, Loss: 0.8012, Acc: 74.29%
+  Batch 350/391, Loss: 0.9354, Acc: 74.43%
+Train Loss: 0.7295, Train Acc: 74.65%
+Test Loss: 0.6822, Test Acc: 76.65%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 4/150 (LR: 0.000998) ===
+  Batch 0/391, Loss: 0.5947, Acc: 82.81%
+  Batch 50/391, Loss: 0.5672, Acc: 77.71%
+  Batch 100/391, Loss: 0.7192, Acc: 77.21%
+  Batch 150/391, Loss: 0.5654, Acc: 77.02%
+  Batch 200/391, Loss: 0.8152, Acc: 77.01%
+  Batch 250/391, Loss: 0.6569, Acc: 77.26%
+  Batch 300/391, Loss: 0.6890, Acc: 77.41%
+  Batch 350/391, Loss: 0.4882, Acc: 77.60%
+Train Loss: 0.6388, Train Acc: 77.70%
+Test Loss: 0.6580, Test Acc: 76.83%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 5/150 (LR: 0.000996) ===
+  Batch 0/391, Loss: 0.5107, Acc: 83.59%
+  Batch 50/391, Loss: 0.8322, Acc: 79.49%
+  Batch 100/391, Loss: 0.6556, Acc: 79.82%
+  Batch 150/391, Loss: 0.5009, Acc: 79.82%
+  Batch 200/391, Loss: 0.4307, Acc: 79.87%
+  Batch 250/391, Loss: 0.5754, Acc: 79.89%
+  Batch 300/391, Loss: 0.5432, Acc: 79.88%
+  Batch 350/391, Loss: 0.5402, Acc: 80.04%
+Train Loss: 0.5750, Train Acc: 80.17%
+Test Loss: 0.5416, Test Acc: 81.59%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 6/150 (LR: 0.000994) ===
+  Batch 0/391, Loss: 0.6857, Acc: 72.66%
+  Batch 50/391, Loss: 0.5695, Acc: 81.54%
+  Batch 100/391, Loss: 0.5982, Acc: 81.30%
+  Batch 150/391, Loss: 0.5910, Acc: 81.51%
+  Batch 200/391, Loss: 0.3875, Acc: 81.59%
+  Batch 250/391, Loss: 0.4705, Acc: 81.87%
+  Batch 300/391, Loss: 0.6391, Acc: 81.95%
+  Batch 350/391, Loss: 0.4623, Acc: 82.02%
+Train Loss: 0.5222, Train Acc: 81.98%
+Test Loss: 0.5221, Test Acc: 81.91%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 7/150 (LR: 0.000991) ===
+  Batch 0/391, Loss: 0.4598, Acc: 82.81%
+  Batch 50/391, Loss: 0.5392, Acc: 83.76%
+  Batch 100/391, Loss: 0.5087, Acc: 83.43%
+  Batch 150/391, Loss: 0.4466, Acc: 83.36%
+  Batch 200/391, Loss: 0.3996, Acc: 83.19%
+  Batch 250/391, Loss: 0.4187, Acc: 83.08%
+  Batch 300/391, Loss: 0.4305, Acc: 83.14%
+  Batch 350/391, Loss: 0.4389, Acc: 83.28%
+Train Loss: 0.4866, Train Acc: 83.34%
+Test Loss: 0.5184, Test Acc: 82.22%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 8/150 (LR: 0.000988) ===
+  Batch 0/391, Loss: 0.5639, Acc: 78.91%
+  Batch 50/391, Loss: 0.5353, Acc: 84.05%
+  Batch 100/391, Loss: 0.4079, Acc: 84.04%
+  Batch 150/391, Loss: 0.6005, Acc: 83.99%
+  Batch 200/391, Loss: 0.5205, Acc: 83.99%
+  Batch 250/391, Loss: 0.4751, Acc: 84.09%
+  Batch 300/391, Loss: 0.3545, Acc: 84.14%
+  Batch 350/391, Loss: 0.3153, Acc: 84.11%
+Train Loss: 0.4570, Train Acc: 84.17%
+Test Loss: 0.5103, Test Acc: 82.77%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 9/150 (LR: 0.000984) ===
+  Batch 0/391, Loss: 0.5144, Acc: 82.03%
+  Batch 50/391, Loss: 0.6241, Acc: 85.62%
+  Batch 100/391, Loss: 0.4830, Acc: 85.68%
+  Batch 150/391, Loss: 0.4182, Acc: 85.35%
+  Batch 200/391, Loss: 0.4455, Acc: 85.40%
+  Batch 250/391, Loss: 0.2785, Acc: 85.47%
+  Batch 300/391, Loss: 0.4179, Acc: 85.45%
+  Batch 350/391, Loss: 0.4013, Acc: 85.42%
+Train Loss: 0.4261, Train Acc: 85.42%
+Test Loss: 0.4647, Test Acc: 84.10%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 10/150 (LR: 0.000980) ===
+  Batch 0/391, Loss: 0.3750, Acc: 89.84%
+  Batch 50/391, Loss: 0.3880, Acc: 86.78%
+  Batch 100/391, Loss: 0.4974, Acc: 86.23%
+  Batch 150/391, Loss: 0.4330, Acc: 86.22%
+  Batch 200/391, Loss: 0.3285, Acc: 86.31%
+  Batch 250/391, Loss: 0.4257, Acc: 86.46%
+  Batch 300/391, Loss: 0.4085, Acc: 86.33%
+  Batch 350/391, Loss: 0.3319, Acc: 86.13%
+Train Loss: 0.4023, Train Acc: 86.22%
+Test Loss: 0.4787, Test Acc: 84.65%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 11/150 (LR: 0.000976) ===
+  Batch 0/391, Loss: 0.3330, Acc: 85.94%
+  Batch 50/391, Loss: 0.6019, Acc: 87.76%
+  Batch 100/391, Loss: 0.4507, Acc: 86.95%
+  Batch 150/391, Loss: 0.4859, Acc: 86.82%
+  Batch 200/391, Loss: 0.4696, Acc: 86.90%
+  Batch 250/391, Loss: 0.3814, Acc: 86.81%
+  Batch 300/391, Loss: 0.3800, Acc: 86.86%
+  Batch 350/391, Loss: 0.4637, Acc: 86.86%
+Train Loss: 0.3871, Train Acc: 86.78%
+Test Loss: 0.4963, Test Acc: 83.29%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 12/150 (LR: 0.000970) ===
+  Batch 0/391, Loss: 0.2861, Acc: 89.06%
+  Batch 50/391, Loss: 0.3543, Acc: 87.68%
+  Batch 100/391, Loss: 0.4445, Acc: 87.72%
+  Batch 150/391, Loss: 0.2897, Acc: 87.69%
+  Batch 200/391, Loss: 0.3290, Acc: 87.34%
+  Batch 250/391, Loss: 0.2891, Acc: 87.23%
+  Batch 300/391, Loss: 0.4241, Acc: 87.23%
+  Batch 350/391, Loss: 0.4076, Acc: 87.21%
+Train Loss: 0.3687, Train Acc: 87.16%
+Test Loss: 0.5016, Test Acc: 83.23%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 13/150 (LR: 0.000965) ===
+  Batch 0/391, Loss: 0.4083, Acc: 86.72%
+  Batch 50/391, Loss: 0.2061, Acc: 88.48%
+  Batch 100/391, Loss: 0.2545, Acc: 88.28%
+  Batch 150/391, Loss: 0.3491, Acc: 88.45%
+  Batch 200/391, Loss: 0.4324, Acc: 88.31%
+  Batch 250/391, Loss: 0.3295, Acc: 88.10%
+  Batch 300/391, Loss: 0.2445, Acc: 88.12%
+  Batch 350/391, Loss: 0.3823, Acc: 88.15%
+Train Loss: 0.3474, Train Acc: 88.05%
+Test Loss: 0.4292, Test Acc: 85.38%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 14/150 (LR: 0.000959) ===
+  Batch 0/391, Loss: 0.3337, Acc: 88.28%
+  Batch 50/391, Loss: 0.2178, Acc: 88.34%
+  Batch 100/391, Loss: 0.3180, Acc: 88.54%
+  Batch 150/391, Loss: 0.3831, Acc: 88.28%
+  Batch 200/391, Loss: 0.4473, Acc: 88.24%
+  Batch 250/391, Loss: 0.3166, Acc: 88.45%
+  Batch 300/391, Loss: 0.4115, Acc: 88.36%
+  Batch 350/391, Loss: 0.3457, Acc: 88.35%
+Train Loss: 0.3363, Train Acc: 88.27%
+Test Loss: 0.4249, Test Acc: 85.80%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 15/150 (LR: 0.000952) ===
+  Batch 0/391, Loss: 0.2652, Acc: 91.41%
+  Batch 50/391, Loss: 0.2498, Acc: 89.63%
+  Batch 100/391, Loss: 0.3984, Acc: 88.95%
+  Batch 150/391, Loss: 0.4483, Acc: 89.09%
+  Batch 200/391, Loss: 0.3125, Acc: 89.19%
+  Batch 250/391, Loss: 0.2145, Acc: 89.13%
+  Batch 300/391, Loss: 0.2122, Acc: 89.08%
+  Batch 350/391, Loss: 0.3021, Acc: 88.94%
+Train Loss: 0.3236, Train Acc: 88.90%
+Test Loss: 0.4037, Test Acc: 86.44%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 16/150 (LR: 0.000946) ===
+  Batch 0/391, Loss: 0.3126, Acc: 88.28%
+  Batch 50/391, Loss: 0.3353, Acc: 89.20%
+  Batch 100/391, Loss: 0.2188, Acc: 89.57%
+  Batch 150/391, Loss: 0.3237, Acc: 89.41%
+  Batch 200/391, Loss: 0.2836, Acc: 89.31%
+  Batch 250/391, Loss: 0.4031, Acc: 89.24%
+  Batch 300/391, Loss: 0.3213, Acc: 89.34%
+  Batch 350/391, Loss: 0.3490, Acc: 89.32%
+Train Loss: 0.3124, Train Acc: 89.25%
+Test Loss: 0.4328, Test Acc: 85.48%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 17/150 (LR: 0.000938) ===
+  Batch 0/391, Loss: 0.2399, Acc: 92.19%
+  Batch 50/391, Loss: 0.2900, Acc: 90.82%
+  Batch 100/391, Loss: 0.2691, Acc: 90.15%
+  Batch 150/391, Loss: 0.3093, Acc: 89.89%
+  Batch 200/391, Loss: 0.2345, Acc: 89.77%
+  Batch 250/391, Loss: 0.3174, Acc: 89.70%
+  Batch 300/391, Loss: 0.1645, Acc: 89.66%
+  Batch 350/391, Loss: 0.2473, Acc: 89.70%
+Train Loss: 0.2976, Train Acc: 89.69%
+Test Loss: 0.5283, Test Acc: 83.41%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 18/150 (LR: 0.000930) ===
+  Batch 0/391, Loss: 0.2917, Acc: 91.41%
+  Batch 50/391, Loss: 0.2600, Acc: 90.07%
+  Batch 100/391, Loss: 0.2876, Acc: 90.05%
+  Batch 150/391, Loss: 0.2414, Acc: 90.14%
+  Batch 200/391, Loss: 0.3517, Acc: 90.19%
+  Batch 250/391, Loss: 0.3992, Acc: 90.15%
+  Batch 300/391, Loss: 0.3654, Acc: 90.19%
+  Batch 350/391, Loss: 0.3468, Acc: 90.15%
+Train Loss: 0.2907, Train Acc: 90.11%
+Test Loss: 0.4916, Test Acc: 84.22%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 19/150 (LR: 0.000922) ===
+  Batch 0/391, Loss: 0.2878, Acc: 88.28%
+  Batch 50/391, Loss: 0.2225, Acc: 91.16%
+  Batch 100/391, Loss: 0.3635, Acc: 91.00%
+  Batch 150/391, Loss: 0.2004, Acc: 90.96%
+  Batch 200/391, Loss: 0.3814, Acc: 90.62%
+  Batch 250/391, Loss: 0.2562, Acc: 90.47%
+  Batch 300/391, Loss: 0.2630, Acc: 90.47%
+  Batch 350/391, Loss: 0.2281, Acc: 90.35%
+Train Loss: 0.2793, Train Acc: 90.30%
+Test Loss: 0.3628, Test Acc: 87.72%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 20/150 (LR: 0.000914) ===
+  Batch 0/391, Loss: 0.2549, Acc: 91.41%
+  Batch 50/391, Loss: 0.2457, Acc: 91.02%
+  Batch 100/391, Loss: 0.1910, Acc: 90.99%
+  Batch 150/391, Loss: 0.3434, Acc: 90.79%
+  Batch 200/391, Loss: 0.2046, Acc: 90.83%
+  Batch 250/391, Loss: 0.2706, Acc: 90.67%
+  Batch 300/391, Loss: 0.4926, Acc: 90.59%
+  Batch 350/391, Loss: 0.2073, Acc: 90.65%
+Train Loss: 0.2672, Train Acc: 90.65%
+Test Loss: 0.3910, Test Acc: 87.32%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 21/150 (LR: 0.000905) ===
+  Batch 0/391, Loss: 0.2926, Acc: 87.50%
+  Batch 50/391, Loss: 0.3464, Acc: 91.01%
+  Batch 100/391, Loss: 0.1826, Acc: 90.94%
+  Batch 150/391, Loss: 0.1874, Acc: 91.24%
+  Batch 200/391, Loss: 0.2267, Acc: 91.20%
+  Batch 250/391, Loss: 0.3244, Acc: 91.12%
+  Batch 300/391, Loss: 0.2566, Acc: 91.05%
+  Batch 350/391, Loss: 0.3401, Acc: 91.07%
+Train Loss: 0.2598, Train Acc: 91.04%
+Test Loss: 0.4204, Test Acc: 86.55%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 22/150 (LR: 0.000895) ===
+  Batch 0/391, Loss: 0.2804, Acc: 90.62%
+  Batch 50/391, Loss: 0.2254, Acc: 91.97%
+  Batch 100/391, Loss: 0.2098, Acc: 91.75%
+  Batch 150/391, Loss: 0.2154, Acc: 91.68%
+  Batch 200/391, Loss: 0.3210, Acc: 91.55%
+  Batch 250/391, Loss: 0.1890, Acc: 91.39%
+  Batch 300/391, Loss: 0.1723, Acc: 91.24%
+  Batch 350/391, Loss: 0.2331, Acc: 91.16%
+Train Loss: 0.2547, Train Acc: 91.20%
+Test Loss: 0.3839, Test Acc: 87.58%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 23/150 (LR: 0.000885) ===
+  Batch 0/391, Loss: 0.2282, Acc: 92.97%
+  Batch 50/391, Loss: 0.3415, Acc: 91.73%
+  Batch 100/391, Loss: 0.3293, Acc: 91.93%
+  Batch 150/391, Loss: 0.2092, Acc: 91.83%
+  Batch 200/391, Loss: 0.2613, Acc: 91.66%
+  Batch 250/391, Loss: 0.2791, Acc: 91.54%
+  Batch 300/391, Loss: 0.2913, Acc: 91.54%
+  Batch 350/391, Loss: 0.3238, Acc: 91.46%
+Train Loss: 0.2425, Train Acc: 91.54%
+Test Loss: 0.3748, Test Acc: 88.06%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 24/150 (LR: 0.000875) ===
+  Batch 0/391, Loss: 0.2151, Acc: 93.75%
+  Batch 50/391, Loss: 0.2416, Acc: 92.77%
+  Batch 100/391, Loss: 0.2984, Acc: 92.41%
+  Batch 150/391, Loss: 0.2264, Acc: 92.27%
+  Batch 200/391, Loss: 0.1876, Acc: 91.94%
+  Batch 250/391, Loss: 0.2772, Acc: 91.89%
+  Batch 300/391, Loss: 0.2617, Acc: 91.87%
+  Batch 350/391, Loss: 0.2148, Acc: 91.72%
+Train Loss: 0.2395, Train Acc: 91.61%
+Test Loss: 0.3987, Test Acc: 86.93%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 25/150 (LR: 0.000864) ===
+  Batch 0/391, Loss: 0.1883, Acc: 91.41%
+  Batch 50/391, Loss: 0.2032, Acc: 92.40%
+  Batch 100/391, Loss: 0.1414, Acc: 92.48%
+  Batch 150/391, Loss: 0.3082, Acc: 92.25%
+  Batch 200/391, Loss: 0.2431, Acc: 92.23%
+  Batch 250/391, Loss: 0.2594, Acc: 92.23%
+  Batch 300/391, Loss: 0.2108, Acc: 92.13%
+  Batch 350/391, Loss: 0.2536, Acc: 92.00%
+Train Loss: 0.2279, Train Acc: 91.97%
+Test Loss: 0.3531, Test Acc: 88.57%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 26/150 (LR: 0.000854) ===
+  Batch 0/391, Loss: 0.1958, Acc: 92.97%
+  Batch 50/391, Loss: 0.1952, Acc: 92.62%
+  Batch 100/391, Loss: 0.2720, Acc: 92.58%
+  Batch 150/391, Loss: 0.3767, Acc: 92.51%
+  Batch 200/391, Loss: 0.1755, Acc: 92.46%
+  Batch 250/391, Loss: 0.2590, Acc: 92.37%
+  Batch 300/391, Loss: 0.2069, Acc: 92.34%
+  Batch 350/391, Loss: 0.1833, Acc: 92.31%
+Train Loss: 0.2251, Train Acc: 92.28%
+Test Loss: 0.4063, Test Acc: 87.60%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 27/150 (LR: 0.000842) ===
+  Batch 0/391, Loss: 0.1465, Acc: 92.97%
+  Batch 50/391, Loss: 0.3443, Acc: 92.59%
+  Batch 100/391, Loss: 0.1194, Acc: 92.74%
+  Batch 150/391, Loss: 0.2406, Acc: 92.54%
+  Batch 200/391, Loss: 0.1489, Acc: 92.64%
+  Batch 250/391, Loss: 0.2056, Acc: 92.44%
+  Batch 300/391, Loss: 0.1639, Acc: 92.45%
+  Batch 350/391, Loss: 0.1375, Acc: 92.48%
+Train Loss: 0.2182, Train Acc: 92.41%
+Test Loss: 0.3596, Test Acc: 88.34%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 28/150 (LR: 0.000831) ===
+  Batch 0/391, Loss: 0.2050, Acc: 92.19%
+  Batch 50/391, Loss: 0.1522, Acc: 93.21%
+  Batch 100/391, Loss: 0.2524, Acc: 92.98%
+  Batch 150/391, Loss: 0.2222, Acc: 93.00%
+  Batch 200/391, Loss: 0.2348, Acc: 92.87%
+  Batch 250/391, Loss: 0.2990, Acc: 92.70%
+  Batch 300/391, Loss: 0.1860, Acc: 92.70%
+  Batch 350/391, Loss: 0.2562, Acc: 92.66%
+Train Loss: 0.2138, Train Acc: 92.62%
+Test Loss: 0.3685, Test Acc: 88.40%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 29/150 (LR: 0.000819) ===
+  Batch 0/391, Loss: 0.2702, Acc: 89.84%
+  Batch 50/391, Loss: 0.1271, Acc: 93.77%
+  Batch 100/391, Loss: 0.1263, Acc: 93.32%
+  Batch 150/391, Loss: 0.1076, Acc: 93.33%
+  Batch 200/391, Loss: 0.1385, Acc: 93.11%
+  Batch 250/391, Loss: 0.1755, Acc: 93.03%
+  Batch 300/391, Loss: 0.1825, Acc: 92.95%
+  Batch 350/391, Loss: 0.2002, Acc: 92.83%
+Train Loss: 0.2084, Train Acc: 92.70%
+Test Loss: 0.3714, Test Acc: 87.96%
+Unique weight values per layer: min=12, max=15, avg=14.4
+
+=== Epoch 30/150 (LR: 0.000806) ===
+  Batch 0/391, Loss: 0.1859, Acc: 92.97%
+  Batch 50/391, Loss: 0.2371, Acc: 93.12%
+  Batch 100/391, Loss: 0.1891, Acc: 93.07%
+  Batch 150/391, Loss: 0.1844, Acc: 92.95%
+  Batch 200/391, Loss: 0.1784, Acc: 92.90%
+  Batch 250/391, Loss: 0.2077, Acc: 92.85%
+  Batch 300/391, Loss: 0.2506, Acc: 92.86%
+  Batch 350/391, Loss: 0.1847, Acc: 92.89%
+Train Loss: 0.2083, Train Acc: 92.83%
+Test Loss: 0.3940, Test Acc: 87.76%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 31/150 (LR: 0.000794) ===
+  Batch 0/391, Loss: 0.1069, Acc: 95.31%
+  Batch 50/391, Loss: 0.3038, Acc: 93.80%
+  Batch 100/391, Loss: 0.1796, Acc: 93.33%
+  Batch 150/391, Loss: 0.0863, Acc: 93.26%
+  Batch 200/391, Loss: 0.1736, Acc: 93.20%
+  Batch 250/391, Loss: 0.1602, Acc: 93.15%
+  Batch 300/391, Loss: 0.1505, Acc: 93.05%
+  Batch 350/391, Loss: 0.2293, Acc: 92.96%
+Train Loss: 0.2022, Train Acc: 92.92%
+Test Loss: 0.4074, Test Acc: 87.11%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 32/150 (LR: 0.000781) ===
+  Batch 0/391, Loss: 0.2801, Acc: 90.62%
+  Batch 50/391, Loss: 0.2014, Acc: 93.32%
+  Batch 100/391, Loss: 0.1868, Acc: 93.27%
+  Batch 150/391, Loss: 0.2029, Acc: 93.40%
+  Batch 200/391, Loss: 0.2511, Acc: 93.43%
+  Batch 250/391, Loss: 0.2334, Acc: 93.25%
+  Batch 300/391, Loss: 0.2177, Acc: 93.27%
+  Batch 350/391, Loss: 0.1665, Acc: 93.19%
+Train Loss: 0.1990, Train Acc: 93.16%
+Test Loss: 0.3724, Test Acc: 88.09%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 33/150 (LR: 0.000768) ===
+  Batch 0/391, Loss: 0.1600, Acc: 94.53%
+  Batch 50/391, Loss: 0.1532, Acc: 94.30%
+  Batch 100/391, Loss: 0.2281, Acc: 93.77%
+  Batch 150/391, Loss: 0.2804, Acc: 93.61%
+  Batch 200/391, Loss: 0.1955, Acc: 93.53%
+  Batch 250/391, Loss: 0.2544, Acc: 93.55%
+  Batch 300/391, Loss: 0.0993, Acc: 93.49%
+  Batch 350/391, Loss: 0.1803, Acc: 93.41%
+Train Loss: 0.1925, Train Acc: 93.35%
+Test Loss: 0.3797, Test Acc: 87.79%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 34/150 (LR: 0.000755) ===
+  Batch 0/391, Loss: 0.1939, Acc: 92.19%
+  Batch 50/391, Loss: 0.2167, Acc: 93.84%
+  Batch 100/391, Loss: 0.1279, Acc: 94.04%
+  Batch 150/391, Loss: 0.2160, Acc: 93.91%
+  Batch 200/391, Loss: 0.2479, Acc: 93.78%
+  Batch 250/391, Loss: 0.1670, Acc: 93.72%
+  Batch 300/391, Loss: 0.1446, Acc: 93.73%
+  Batch 350/391, Loss: 0.1318, Acc: 93.65%
+Train Loss: 0.1848, Train Acc: 93.63%
+Test Loss: 0.3501, Test Acc: 88.66%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 35/150 (LR: 0.000741) ===
+  Batch 0/391, Loss: 0.1269, Acc: 95.31%
+  Batch 50/391, Loss: 0.1955, Acc: 93.87%
+  Batch 100/391, Loss: 0.1837, Acc: 94.24%
+  Batch 150/391, Loss: 0.1988, Acc: 93.98%
+  Batch 200/391, Loss: 0.2021, Acc: 93.79%
+  Batch 250/391, Loss: 0.2056, Acc: 93.73%
+  Batch 300/391, Loss: 0.2396, Acc: 93.66%
+  Batch 350/391, Loss: 0.1244, Acc: 93.67%
+Train Loss: 0.1808, Train Acc: 93.63%
+Test Loss: 0.3984, Test Acc: 88.15%
+Unique weight values per layer: min=12, max=15, avg=14.2
+
+=== Epoch 36/150 (LR: 0.000727) ===
+  Batch 0/391, Loss: 0.1135, Acc: 96.88%
+  Batch 50/391, Loss: 0.1540, Acc: 94.75%
+  Batch 100/391, Loss: 0.1200, Acc: 94.32%
+  Batch 150/391, Loss: 0.1153, Acc: 94.23%
+  Batch 200/391, Loss: 0.1178, Acc: 94.02%
+  Batch 250/391, Loss: 0.1686, Acc: 93.91%
+  Batch 300/391, Loss: 0.2021, Acc: 93.88%
+  Batch 350/391, Loss: 0.2135, Acc: 93.92%
+Train Loss: 0.1762, Train Acc: 93.87%
+Test Loss: 0.3621, Test Acc: 88.82%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 37/150 (LR: 0.000713) ===
+  Batch 0/391, Loss: 0.2734, Acc: 92.97%
+  Batch 50/391, Loss: 0.1180, Acc: 94.41%
+  Batch 100/391, Loss: 0.3230, Acc: 94.44%
+  Batch 150/391, Loss: 0.2610, Acc: 94.44%
+  Batch 200/391, Loss: 0.1287, Acc: 94.30%
+  Batch 250/391, Loss: 0.2056, Acc: 94.21%
+  Batch 300/391, Loss: 0.1390, Acc: 94.08%
+  Batch 350/391, Loss: 0.1078, Acc: 94.09%
+Train Loss: 0.1717, Train Acc: 94.06%
+Test Loss: 0.3590, Test Acc: 89.03%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 38/150 (LR: 0.000699) ===
+  Batch 0/391, Loss: 0.1457, Acc: 95.31%
+  Batch 50/391, Loss: 0.1412, Acc: 94.94%
+  Batch 100/391, Loss: 0.1615, Acc: 94.62%
+  Batch 150/391, Loss: 0.0873, Acc: 94.54%
+  Batch 200/391, Loss: 0.1234, Acc: 94.50%
+  Batch 250/391, Loss: 0.2167, Acc: 94.36%
+  Batch 300/391, Loss: 0.2989, Acc: 94.27%
+  Batch 350/391, Loss: 0.1738, Acc: 94.27%
+Train Loss: 0.1654, Train Acc: 94.19%
+Test Loss: 0.3557, Test Acc: 89.25%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 39/150 (LR: 0.000684) ===
+  Batch 0/391, Loss: 0.2194, Acc: 95.31%
+  Batch 50/391, Loss: 0.0940, Acc: 94.78%
+  Batch 100/391, Loss: 0.1861, Acc: 94.88%
+  Batch 150/391, Loss: 0.1249, Acc: 94.71%
+  Batch 200/391, Loss: 0.2026, Acc: 94.52%
+  Batch 250/391, Loss: 0.1892, Acc: 94.43%
+  Batch 300/391, Loss: 0.2329, Acc: 94.42%
+  Batch 350/391, Loss: 0.1193, Acc: 94.35%
+Train Loss: 0.1624, Train Acc: 94.29%
+Test Loss: 0.3675, Test Acc: 88.97%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 40/150 (LR: 0.000669) ===
+  Batch 0/391, Loss: 0.1200, Acc: 97.66%
+  Batch 50/391, Loss: 0.1255, Acc: 95.08%
+  Batch 100/391, Loss: 0.0478, Acc: 95.17%
+  Batch 150/391, Loss: 0.0952, Acc: 95.14%
+  Batch 200/391, Loss: 0.1699, Acc: 94.92%
+  Batch 250/391, Loss: 0.1694, Acc: 94.86%
+  Batch 300/391, Loss: 0.1548, Acc: 94.81%
+  Batch 350/391, Loss: 0.1582, Acc: 94.72%
+Train Loss: 0.1559, Train Acc: 94.71%
+Test Loss: 0.3776, Test Acc: 88.65%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 41/150 (LR: 0.000655) ===
+  Batch 0/391, Loss: 0.1997, Acc: 93.75%
+  Batch 50/391, Loss: 0.0845, Acc: 95.13%
+  Batch 100/391, Loss: 0.0805, Acc: 94.94%
+  Batch 150/391, Loss: 0.1497, Acc: 94.90%
+  Batch 200/391, Loss: 0.2080, Acc: 94.84%
+  Batch 250/391, Loss: 0.1009, Acc: 94.72%
+  Batch 300/391, Loss: 0.1760, Acc: 94.67%
+  Batch 350/391, Loss: 0.0932, Acc: 94.62%
+Train Loss: 0.1539, Train Acc: 94.57%
+Test Loss: 0.3415, Test Acc: 89.66%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 42/150 (LR: 0.000639) ===
+  Batch 0/391, Loss: 0.0789, Acc: 98.44%
+  Batch 50/391, Loss: 0.1290, Acc: 94.94%
+  Batch 100/391, Loss: 0.0951, Acc: 95.03%
+  Batch 150/391, Loss: 0.0979, Acc: 95.04%
+  Batch 200/391, Loss: 0.1327, Acc: 94.99%
+  Batch 250/391, Loss: 0.1549, Acc: 94.85%
+  Batch 300/391, Loss: 0.3007, Acc: 94.74%
+  Batch 350/391, Loss: 0.1629, Acc: 94.70%
+Train Loss: 0.1517, Train Acc: 94.70%
+Test Loss: 0.3868, Test Acc: 88.60%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 43/150 (LR: 0.000624) ===
+  Batch 0/391, Loss: 0.0564, Acc: 98.44%
+  Batch 50/391, Loss: 0.1271, Acc: 96.09%
+  Batch 100/391, Loss: 0.1360, Acc: 95.54%
+  Batch 150/391, Loss: 0.1554, Acc: 95.15%
+  Batch 200/391, Loss: 0.2024, Acc: 95.14%
+  Batch 250/391, Loss: 0.1900, Acc: 95.01%
+  Batch 300/391, Loss: 0.0889, Acc: 95.00%
+  Batch 350/391, Loss: 0.2033, Acc: 94.92%
+Train Loss: 0.1473, Train Acc: 94.87%
+Test Loss: 0.3426, Test Acc: 89.46%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 44/150 (LR: 0.000609) ===
+  Batch 0/391, Loss: 0.1708, Acc: 93.75%
+  Batch 50/391, Loss: 0.0955, Acc: 95.27%
+  Batch 100/391, Loss: 0.1168, Acc: 95.23%
+  Batch 150/391, Loss: 0.1459, Acc: 95.07%
+  Batch 200/391, Loss: 0.1235, Acc: 95.06%
+  Batch 250/391, Loss: 0.1085, Acc: 95.11%
+  Batch 300/391, Loss: 0.1822, Acc: 95.07%
+  Batch 350/391, Loss: 0.1605, Acc: 94.98%
+Train Loss: 0.1430, Train Acc: 94.95%
+Test Loss: 0.3517, Test Acc: 89.02%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 45/150 (LR: 0.000594) ===
+  Batch 0/391, Loss: 0.2298, Acc: 92.19%
+  Batch 50/391, Loss: 0.1189, Acc: 95.80%
+  Batch 100/391, Loss: 0.1843, Acc: 95.65%
+  Batch 150/391, Loss: 0.1046, Acc: 95.70%
+  Batch 200/391, Loss: 0.1524, Acc: 95.55%
+  Batch 250/391, Loss: 0.1408, Acc: 95.44%
+  Batch 300/391, Loss: 0.0780, Acc: 95.44%
+  Batch 350/391, Loss: 0.2409, Acc: 95.29%
+Train Loss: 0.1371, Train Acc: 95.26%
+Test Loss: 0.3448, Test Acc: 89.81%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 46/150 (LR: 0.000578) ===
+  Batch 0/391, Loss: 0.1290, Acc: 97.66%
+  Batch 50/391, Loss: 0.0835, Acc: 95.40%
+  Batch 100/391, Loss: 0.1243, Acc: 95.42%
+  Batch 150/391, Loss: 0.0914, Acc: 95.41%
+  Batch 200/391, Loss: 0.1463, Acc: 95.25%
+  Batch 250/391, Loss: 0.0886, Acc: 95.22%
+  Batch 300/391, Loss: 0.1464, Acc: 95.23%
+  Batch 350/391, Loss: 0.1311, Acc: 95.17%
+Train Loss: 0.1365, Train Acc: 95.19%
+Test Loss: 0.3948, Test Acc: 88.44%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 47/150 (LR: 0.000563) ===
+  Batch 0/391, Loss: 0.0947, Acc: 96.09%
+  Batch 50/391, Loss: 0.1268, Acc: 95.79%
+  Batch 100/391, Loss: 0.1060, Acc: 95.65%
+  Batch 150/391, Loss: 0.1030, Acc: 95.63%
+  Batch 200/391, Loss: 0.1610, Acc: 95.60%
+  Batch 250/391, Loss: 0.1031, Acc: 95.63%
+  Batch 300/391, Loss: 0.1374, Acc: 95.53%
+  Batch 350/391, Loss: 0.1496, Acc: 95.47%
+Train Loss: 0.1302, Train Acc: 95.44%
+Test Loss: 0.3549, Test Acc: 89.44%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 48/150 (LR: 0.000547) ===
+  Batch 0/391, Loss: 0.1184, Acc: 94.53%
+  Batch 50/391, Loss: 0.1044, Acc: 95.71%
+  Batch 100/391, Loss: 0.0626, Acc: 96.04%
+  Batch 150/391, Loss: 0.0892, Acc: 96.00%
+  Batch 200/391, Loss: 0.1500, Acc: 95.83%
+  Batch 250/391, Loss: 0.1495, Acc: 95.76%
+  Batch 300/391, Loss: 0.1461, Acc: 95.64%
+  Batch 350/391, Loss: 0.1291, Acc: 95.64%
+Train Loss: 0.1238, Train Acc: 95.63%
+Test Loss: 0.3644, Test Acc: 89.45%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 49/150 (LR: 0.000531) ===
+  Batch 0/391, Loss: 0.1480, Acc: 96.09%
+  Batch 50/391, Loss: 0.0573, Acc: 96.23%
+  Batch 100/391, Loss: 0.1425, Acc: 95.92%
+  Batch 150/391, Loss: 0.1325, Acc: 95.91%
+  Batch 200/391, Loss: 0.1848, Acc: 95.84%
+  Batch 250/391, Loss: 0.0538, Acc: 95.71%
+  Batch 300/391, Loss: 0.1391, Acc: 95.61%
+  Batch 350/391, Loss: 0.1018, Acc: 95.59%
+Train Loss: 0.1258, Train Acc: 95.51%
+Test Loss: 0.4203, Test Acc: 88.08%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 50/150 (LR: 0.000516) ===
+  Batch 0/391, Loss: 0.1529, Acc: 94.53%
+  Batch 50/391, Loss: 0.0870, Acc: 96.29%
+  Batch 100/391, Loss: 0.2192, Acc: 96.24%
+  Batch 150/391, Loss: 0.1140, Acc: 96.24%
+  Batch 200/391, Loss: 0.1077, Acc: 96.19%
+  Batch 250/391, Loss: 0.0769, Acc: 96.14%
+  Batch 300/391, Loss: 0.1380, Acc: 96.11%
+  Batch 350/391, Loss: 0.0892, Acc: 96.06%
+Train Loss: 0.1166, Train Acc: 96.01%
+Test Loss: 0.3478, Test Acc: 89.97%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 51/150 (LR: 0.000500) ===
+  Batch 0/391, Loss: 0.1196, Acc: 96.09%
+  Batch 50/391, Loss: 0.0823, Acc: 96.60%
+  Batch 100/391, Loss: 0.0780, Acc: 96.50%
+  Batch 150/391, Loss: 0.2097, Acc: 96.47%
+  Batch 200/391, Loss: 0.1410, Acc: 96.32%
+  Batch 250/391, Loss: 0.1403, Acc: 96.19%
+  Batch 300/391, Loss: 0.1408, Acc: 96.17%
+  Batch 350/391, Loss: 0.0756, Acc: 96.13%
+Train Loss: 0.1136, Train Acc: 96.09%
+Test Loss: 0.3396, Test Acc: 89.96%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 52/150 (LR: 0.000484) ===
+  Batch 0/391, Loss: 0.0707, Acc: 97.66%
+  Batch 50/391, Loss: 0.1517, Acc: 96.26%
+  Batch 100/391, Loss: 0.0881, Acc: 96.27%
+  Batch 150/391, Loss: 0.0933, Acc: 96.25%
+  Batch 200/391, Loss: 0.1044, Acc: 96.36%
+  Batch 250/391, Loss: 0.1144, Acc: 96.33%
+  Batch 300/391, Loss: 0.1032, Acc: 96.26%
+  Batch 350/391, Loss: 0.0907, Acc: 96.21%
+Train Loss: 0.1116, Train Acc: 96.18%
+Test Loss: 0.3811, Test Acc: 88.85%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 53/150 (LR: 0.000469) ===
+  Batch 0/391, Loss: 0.1016, Acc: 95.31%
+  Batch 50/391, Loss: 0.1130, Acc: 96.45%
+  Batch 100/391, Loss: 0.0895, Acc: 96.23%
+  Batch 150/391, Loss: 0.1497, Acc: 96.14%
+  Batch 200/391, Loss: 0.0428, Acc: 96.22%
+  Batch 250/391, Loss: 0.2083, Acc: 96.19%
+  Batch 300/391, Loss: 0.1468, Acc: 96.19%
+  Batch 350/391, Loss: 0.1694, Acc: 96.21%
+Train Loss: 0.1096, Train Acc: 96.17%
+Test Loss: 0.3700, Test Acc: 89.46%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 54/150 (LR: 0.000453) ===
+  Batch 0/391, Loss: 0.0970, Acc: 96.88%
+  Batch 50/391, Loss: 0.0526, Acc: 96.89%
+  Batch 100/391, Loss: 0.1305, Acc: 96.69%
+  Batch 150/391, Loss: 0.0770, Acc: 96.64%
+  Batch 200/391, Loss: 0.0756, Acc: 96.61%
+  Batch 250/391, Loss: 0.0483, Acc: 96.59%
+  Batch 300/391, Loss: 0.1142, Acc: 96.55%
+  Batch 350/391, Loss: 0.1173, Acc: 96.59%
+Train Loss: 0.1008, Train Acc: 96.53%
+Test Loss: 0.3641, Test Acc: 89.81%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 55/150 (LR: 0.000437) ===
+  Batch 0/391, Loss: 0.1105, Acc: 95.31%
+  Batch 50/391, Loss: 0.0956, Acc: 96.95%
+  Batch 100/391, Loss: 0.1162, Acc: 96.76%
+  Batch 150/391, Loss: 0.1355, Acc: 96.68%
+  Batch 200/391, Loss: 0.1176, Acc: 96.59%
+  Batch 250/391, Loss: 0.1070, Acc: 96.58%
+  Batch 300/391, Loss: 0.1285, Acc: 96.61%
+  Batch 350/391, Loss: 0.0926, Acc: 96.55%
+Train Loss: 0.1016, Train Acc: 96.57%
+Test Loss: 0.3578, Test Acc: 90.20%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 56/150 (LR: 0.000422) ===
+  Batch 0/391, Loss: 0.1192, Acc: 96.09%
+  Batch 50/391, Loss: 0.0609, Acc: 96.71%
+  Batch 100/391, Loss: 0.0994, Acc: 96.80%
+  Batch 150/391, Loss: 0.0560, Acc: 96.79%
+  Batch 200/391, Loss: 0.1201, Acc: 96.82%
+  Batch 250/391, Loss: 0.0938, Acc: 96.76%
+  Batch 300/391, Loss: 0.1418, Acc: 96.72%
+  Batch 350/391, Loss: 0.1146, Acc: 96.77%
+Train Loss: 0.0944, Train Acc: 96.72%
+Test Loss: 0.3911, Test Acc: 89.49%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 57/150 (LR: 0.000406) ===
+  Batch 0/391, Loss: 0.1768, Acc: 92.97%
+  Batch 50/391, Loss: 0.0604, Acc: 97.15%
+  Batch 100/391, Loss: 0.0862, Acc: 97.06%
+  Batch 150/391, Loss: 0.0805, Acc: 97.01%
+  Batch 200/391, Loss: 0.1562, Acc: 97.00%
+  Batch 250/391, Loss: 0.0827, Acc: 96.99%
+  Batch 300/391, Loss: 0.0834, Acc: 96.85%
+  Batch 350/391, Loss: 0.0247, Acc: 96.86%
+Train Loss: 0.0918, Train Acc: 96.83%
+Test Loss: 0.3556, Test Acc: 90.19%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 58/150 (LR: 0.000391) ===
+  Batch 0/391, Loss: 0.0514, Acc: 98.44%
+  Batch 50/391, Loss: 0.0878, Acc: 97.18%
+  Batch 100/391, Loss: 0.1220, Acc: 97.06%
+  Batch 150/391, Loss: 0.0899, Acc: 97.07%
+  Batch 200/391, Loss: 0.1053, Acc: 96.97%
+  Batch 250/391, Loss: 0.1264, Acc: 96.98%
+  Batch 300/391, Loss: 0.0807, Acc: 96.97%
+  Batch 350/391, Loss: 0.0793, Acc: 96.98%
+Train Loss: 0.0881, Train Acc: 96.95%
+Test Loss: 0.3653, Test Acc: 90.32%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 59/150 (LR: 0.000376) ===
+  Batch 0/391, Loss: 0.1279, Acc: 96.88%
+  Batch 50/391, Loss: 0.0511, Acc: 97.30%
+  Batch 100/391, Loss: 0.0652, Acc: 97.37%
+  Batch 150/391, Loss: 0.1042, Acc: 97.24%
+  Batch 200/391, Loss: 0.1014, Acc: 97.27%
+  Batch 250/391, Loss: 0.0893, Acc: 97.16%
+  Batch 300/391, Loss: 0.0462, Acc: 97.15%
+  Batch 350/391, Loss: 0.0984, Acc: 97.09%
+Train Loss: 0.0850, Train Acc: 97.06%
+Test Loss: 0.3796, Test Acc: 89.58%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 60/150 (LR: 0.000361) ===
+  Batch 0/391, Loss: 0.1292, Acc: 93.75%
+  Batch 50/391, Loss: 0.0811, Acc: 97.50%
+  Batch 100/391, Loss: 0.0720, Acc: 97.47%
+  Batch 150/391, Loss: 0.1371, Acc: 97.44%
+  Batch 200/391, Loss: 0.0795, Acc: 97.41%
+  Batch 250/391, Loss: 0.1144, Acc: 97.36%
+  Batch 300/391, Loss: 0.1082, Acc: 97.29%
+  Batch 350/391, Loss: 0.0288, Acc: 97.25%
+Train Loss: 0.0807, Train Acc: 97.19%
+Test Loss: 0.3606, Test Acc: 90.19%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 61/150 (LR: 0.000345) ===
+  Batch 0/391, Loss: 0.0593, Acc: 98.44%
+  Batch 50/391, Loss: 0.1277, Acc: 97.53%
+  Batch 100/391, Loss: 0.1317, Acc: 97.60%
+  Batch 150/391, Loss: 0.0261, Acc: 97.51%
+  Batch 200/391, Loss: 0.1432, Acc: 97.46%
+  Batch 250/391, Loss: 0.1109, Acc: 97.39%
+  Batch 300/391, Loss: 0.1201, Acc: 97.37%
+  Batch 350/391, Loss: 0.0963, Acc: 97.36%
+Train Loss: 0.0768, Train Acc: 97.35%
+Test Loss: 0.3586, Test Acc: 90.43%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 62/150 (LR: 0.000331) ===
+  Batch 0/391, Loss: 0.0421, Acc: 99.22%
+  Batch 50/391, Loss: 0.0506, Acc: 97.70%
+  Batch 100/391, Loss: 0.0641, Acc: 97.56%
+  Batch 150/391, Loss: 0.0496, Acc: 97.51%
+  Batch 200/391, Loss: 0.0983, Acc: 97.50%
+  Batch 250/391, Loss: 0.0907, Acc: 97.43%
+  Batch 300/391, Loss: 0.1030, Acc: 97.38%
+  Batch 350/391, Loss: 0.1685, Acc: 97.36%
+Train Loss: 0.0761, Train Acc: 97.36%
+Test Loss: 0.3619, Test Acc: 90.25%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 63/150 (LR: 0.000316) ===
+  Batch 0/391, Loss: 0.0718, Acc: 96.09%
+  Batch 50/391, Loss: 0.0689, Acc: 97.61%
+  Batch 100/391, Loss: 0.0782, Acc: 97.80%
+  Batch 150/391, Loss: 0.0887, Acc: 97.70%
+  Batch 200/391, Loss: 0.0390, Acc: 97.64%
+  Batch 250/391, Loss: 0.1346, Acc: 97.65%
+  Batch 300/391, Loss: 0.0528, Acc: 97.67%
+  Batch 350/391, Loss: 0.0587, Acc: 97.66%
+Train Loss: 0.0685, Train Acc: 97.63%
+Test Loss: 0.3541, Test Acc: 90.48%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 64/150 (LR: 0.000301) ===
+  Batch 0/391, Loss: 0.0646, Acc: 97.66%
+  Batch 50/391, Loss: 0.0918, Acc: 97.98%
+  Batch 100/391, Loss: 0.0470, Acc: 97.95%
+  Batch 150/391, Loss: 0.0804, Acc: 97.71%
+  Batch 200/391, Loss: 0.0417, Acc: 97.75%
+  Batch 250/391, Loss: 0.1082, Acc: 97.75%
+  Batch 300/391, Loss: 0.0478, Acc: 97.68%
+  Batch 350/391, Loss: 0.0987, Acc: 97.62%
+Train Loss: 0.0694, Train Acc: 97.60%
+Test Loss: 0.3831, Test Acc: 89.63%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 65/150 (LR: 0.000287) ===
+  Batch 0/391, Loss: 0.0623, Acc: 97.66%
+  Batch 50/391, Loss: 0.0370, Acc: 97.98%
+  Batch 100/391, Loss: 0.0797, Acc: 97.99%
+  Batch 150/391, Loss: 0.0676, Acc: 97.93%
+  Batch 200/391, Loss: 0.0805, Acc: 97.93%
+  Batch 250/391, Loss: 0.0444, Acc: 97.85%
+  Batch 300/391, Loss: 0.0079, Acc: 97.85%
+  Batch 350/391, Loss: 0.0525, Acc: 97.89%
+Train Loss: 0.0643, Train Acc: 97.84%
+Test Loss: 0.3739, Test Acc: 90.19%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 66/150 (LR: 0.000273) ===
+  Batch 0/391, Loss: 0.1404, Acc: 95.31%
+  Batch 50/391, Loss: 0.0769, Acc: 98.12%
+  Batch 100/391, Loss: 0.1201, Acc: 98.09%
+  Batch 150/391, Loss: 0.0799, Acc: 98.00%
+  Batch 200/391, Loss: 0.0557, Acc: 98.04%
+  Batch 250/391, Loss: 0.1007, Acc: 98.05%
+  Batch 300/391, Loss: 0.0575, Acc: 97.97%
+  Batch 350/391, Loss: 0.0122, Acc: 98.00%
+Train Loss: 0.0594, Train Acc: 98.02%
+Test Loss: 0.3593, Test Acc: 90.35%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 67/150 (LR: 0.000259) ===
+  Batch 0/391, Loss: 0.0337, Acc: 100.00%
+  Batch 50/391, Loss: 0.1226, Acc: 97.67%
+  Batch 100/391, Loss: 0.0734, Acc: 97.89%
+  Batch 150/391, Loss: 0.0993, Acc: 97.93%
+  Batch 200/391, Loss: 0.0399, Acc: 97.95%
+  Batch 250/391, Loss: 0.0649, Acc: 98.01%
+  Batch 300/391, Loss: 0.0798, Acc: 98.04%
+  Batch 350/391, Loss: 0.0569, Acc: 98.04%
+Train Loss: 0.0561, Train Acc: 98.05%
+Test Loss: 0.3455, Test Acc: 90.70%
+Unique weight values per layer: min=14, max=15, avg=14.2
+
+=== Epoch 68/150 (LR: 0.000245) ===
+  Batch 0/391, Loss: 0.0207, Acc: 99.22%
+  Batch 50/391, Loss: 0.0426, Acc: 98.28%
+  Batch 100/391, Loss: 0.0787, Acc: 98.17%
+  Batch 150/391, Loss: 0.0391, Acc: 98.27%
+  Batch 200/391, Loss: 0.0197, Acc: 98.17%
+  Batch 250/391, Loss: 0.0830, Acc: 98.21%
+  Batch 300/391, Loss: 0.0692, Acc: 98.21%
+  Batch 350/391, Loss: 0.0942, Acc: 98.23%
+Train Loss: 0.0537, Train Acc: 98.21%
+Test Loss: 0.3483, Test Acc: 91.16%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 69/150 (LR: 0.000232) ===
+  Batch 0/391, Loss: 0.0135, Acc: 100.00%
+  Batch 50/391, Loss: 0.0589, Acc: 98.48%
+  Batch 100/391, Loss: 0.0369, Acc: 98.52%
+  Batch 150/391, Loss: 0.0488, Acc: 98.44%
+  Batch 200/391, Loss: 0.0537, Acc: 98.46%
+  Batch 250/391, Loss: 0.0832, Acc: 98.48%
+  Batch 300/391, Loss: 0.0212, Acc: 98.47%
+  Batch 350/391, Loss: 0.0732, Acc: 98.44%
+Train Loss: 0.0482, Train Acc: 98.45%
+Test Loss: 0.3567, Test Acc: 90.93%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 70/150 (LR: 0.000219) ===
+  Batch 0/391, Loss: 0.0532, Acc: 96.88%
+  Batch 50/391, Loss: 0.0202, Acc: 98.56%
+  Batch 100/391, Loss: 0.0272, Acc: 98.56%
+  Batch 150/391, Loss: 0.0308, Acc: 98.56%
+  Batch 200/391, Loss: 0.0270, Acc: 98.58%
+  Batch 250/391, Loss: 0.0252, Acc: 98.57%
+  Batch 300/391, Loss: 0.0898, Acc: 98.49%
+  Batch 350/391, Loss: 0.0545, Acc: 98.50%
+Train Loss: 0.0450, Train Acc: 98.50%
+Test Loss: 0.3614, Test Acc: 90.75%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 71/150 (LR: 0.000206) ===
+  Batch 0/391, Loss: 0.0367, Acc: 100.00%
+  Batch 50/391, Loss: 0.0163, Acc: 98.76%
+  Batch 100/391, Loss: 0.0123, Acc: 98.81%
+  Batch 150/391, Loss: 0.0456, Acc: 98.82%
+  Batch 200/391, Loss: 0.0141, Acc: 98.69%
+  Batch 250/391, Loss: 0.0319, Acc: 98.67%
+  Batch 300/391, Loss: 0.0532, Acc: 98.66%
+  Batch 350/391, Loss: 0.0414, Acc: 98.68%
+Train Loss: 0.0411, Train Acc: 98.66%
+Test Loss: 0.3646, Test Acc: 90.87%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 72/150 (LR: 0.000194) ===
+  Batch 0/391, Loss: 0.0265, Acc: 99.22%
+  Batch 50/391, Loss: 0.0720, Acc: 98.62%
+  Batch 100/391, Loss: 0.0562, Acc: 98.60%
+  Batch 150/391, Loss: 0.0515, Acc: 98.59%
+  Batch 200/391, Loss: 0.0231, Acc: 98.60%
+  Batch 250/391, Loss: 0.0197, Acc: 98.61%
+  Batch 300/391, Loss: 0.0281, Acc: 98.60%
+  Batch 350/391, Loss: 0.0404, Acc: 98.62%
+Train Loss: 0.0413, Train Acc: 98.61%
+Test Loss: 0.3351, Test Acc: 91.30%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 73/150 (LR: 0.000181) ===
+  Batch 0/391, Loss: 0.0346, Acc: 98.44%
+  Batch 50/391, Loss: 0.0629, Acc: 98.81%
+  Batch 100/391, Loss: 0.0258, Acc: 98.95%
+  Batch 150/391, Loss: 0.0068, Acc: 98.94%
+  Batch 200/391, Loss: 0.0229, Acc: 98.91%
+  Batch 250/391, Loss: 0.0452, Acc: 98.87%
+  Batch 300/391, Loss: 0.0196, Acc: 98.81%
+  Batch 350/391, Loss: 0.0870, Acc: 98.80%
+Train Loss: 0.0369, Train Acc: 98.78%
+Test Loss: 0.3674, Test Acc: 90.62%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 74/150 (LR: 0.000169) ===
+  Batch 0/391, Loss: 0.0318, Acc: 98.44%
+  Batch 50/391, Loss: 0.0494, Acc: 98.90%
+  Batch 100/391, Loss: 0.0569, Acc: 98.92%
+  Batch 150/391, Loss: 0.0320, Acc: 98.93%
+  Batch 200/391, Loss: 0.0269, Acc: 98.91%
+  Batch 250/391, Loss: 0.0122, Acc: 98.92%
+  Batch 300/391, Loss: 0.0447, Acc: 98.91%
+  Batch 350/391, Loss: 0.0362, Acc: 98.91%
+Train Loss: 0.0328, Train Acc: 98.91%
+Test Loss: 0.3688, Test Acc: 90.85%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 75/150 (LR: 0.000158) ===
+  Batch 0/391, Loss: 0.0336, Acc: 98.44%
+  Batch 50/391, Loss: 0.0417, Acc: 98.85%
+  Batch 100/391, Loss: 0.0367, Acc: 98.99%
+  Batch 150/391, Loss: 0.0383, Acc: 98.97%
+  Batch 200/391, Loss: 0.0118, Acc: 98.96%
+  Batch 250/391, Loss: 0.0744, Acc: 98.94%
+  Batch 300/391, Loss: 0.0132, Acc: 98.95%
+  Batch 350/391, Loss: 0.0603, Acc: 98.96%
+Train Loss: 0.0326, Train Acc: 98.93%
+Test Loss: 0.3523, Test Acc: 91.11%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 76/150 (LR: 0.000146) ===
+  Batch 0/391, Loss: 0.0371, Acc: 99.22%
+  Batch 50/391, Loss: 0.0160, Acc: 98.96%
+  Batch 100/391, Loss: 0.0332, Acc: 99.02%
+  Batch 150/391, Loss: 0.0310, Acc: 99.01%
+  Batch 200/391, Loss: 0.0081, Acc: 99.02%
+  Batch 250/391, Loss: 0.0279, Acc: 99.04%
+  Batch 300/391, Loss: 0.0104, Acc: 99.04%
+  Batch 350/391, Loss: 0.0244, Acc: 99.05%
+Train Loss: 0.0301, Train Acc: 99.02%
+Test Loss: 0.3416, Test Acc: 91.34%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 77/150 (LR: 0.000136) ===
+  Batch 0/391, Loss: 0.0360, Acc: 98.44%
+  Batch 50/391, Loss: 0.0153, Acc: 99.20%
+  Batch 100/391, Loss: 0.0077, Acc: 99.20%
+  Batch 150/391, Loss: 0.0218, Acc: 99.26%
+  Batch 200/391, Loss: 0.0759, Acc: 99.29%
+  Batch 250/391, Loss: 0.0525, Acc: 99.24%
+  Batch 300/391, Loss: 0.0351, Acc: 99.22%
+  Batch 350/391, Loss: 0.0159, Acc: 99.22%
+Train Loss: 0.0252, Train Acc: 99.22%
+Test Loss: 0.3418, Test Acc: 91.53%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 78/150 (LR: 0.000125) ===
+  Batch 0/391, Loss: 0.0045, Acc: 100.00%
+  Batch 50/391, Loss: 0.0190, Acc: 99.45%
+  Batch 100/391, Loss: 0.0291, Acc: 99.44%
+  Batch 150/391, Loss: 0.0087, Acc: 99.37%
+  Batch 200/391, Loss: 0.0362, Acc: 99.33%
+  Batch 250/391, Loss: 0.0096, Acc: 99.32%
+  Batch 300/391, Loss: 0.0220, Acc: 99.27%
+  Batch 350/391, Loss: 0.0225, Acc: 99.26%
+Train Loss: 0.0236, Train Acc: 99.25%
+Test Loss: 0.3377, Test Acc: 91.70%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 79/150 (LR: 0.000115) ===
+  Batch 0/391, Loss: 0.0171, Acc: 100.00%
+  Batch 50/391, Loss: 0.0160, Acc: 99.28%
+  Batch 100/391, Loss: 0.0293, Acc: 99.36%
+  Batch 150/391, Loss: 0.0378, Acc: 99.32%
+  Batch 200/391, Loss: 0.0512, Acc: 99.32%
+  Batch 250/391, Loss: 0.0118, Acc: 99.31%
+  Batch 300/391, Loss: 0.0262, Acc: 99.28%
+  Batch 350/391, Loss: 0.0275, Acc: 99.30%
+Train Loss: 0.0225, Train Acc: 99.31%
+Test Loss: 0.3382, Test Acc: 91.53%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 80/150 (LR: 0.000105) ===
+  Batch 0/391, Loss: 0.0250, Acc: 100.00%
+  Batch 50/391, Loss: 0.0165, Acc: 99.16%
+  Batch 100/391, Loss: 0.0153, Acc: 99.20%
+  Batch 150/391, Loss: 0.0142, Acc: 99.33%
+  Batch 200/391, Loss: 0.0078, Acc: 99.35%
+  Batch 250/391, Loss: 0.0097, Acc: 99.37%
+  Batch 300/391, Loss: 0.0174, Acc: 99.40%
+  Batch 350/391, Loss: 0.0215, Acc: 99.39%
+Train Loss: 0.0201, Train Acc: 99.38%
+Test Loss: 0.3369, Test Acc: 91.71%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 81/150 (LR: 0.000095) ===
+  Batch 0/391, Loss: 0.0786, Acc: 97.66%
+  Batch 50/391, Loss: 0.0064, Acc: 99.51%
+  Batch 100/391, Loss: 0.0394, Acc: 99.50%
+  Batch 150/391, Loss: 0.0179, Acc: 99.44%
+  Batch 200/391, Loss: 0.0067, Acc: 99.46%
+  Batch 250/391, Loss: 0.0107, Acc: 99.46%
+  Batch 300/391, Loss: 0.0071, Acc: 99.49%
+  Batch 350/391, Loss: 0.0044, Acc: 99.49%
+Train Loss: 0.0177, Train Acc: 99.49%
+Test Loss: 0.3425, Test Acc: 91.46%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 82/150 (LR: 0.000086) ===
+  Batch 0/391, Loss: 0.0056, Acc: 100.00%
+  Batch 50/391, Loss: 0.0251, Acc: 99.39%
+  Batch 100/391, Loss: 0.0134, Acc: 99.42%
+  Batch 150/391, Loss: 0.0077, Acc: 99.48%
+  Batch 200/391, Loss: 0.0207, Acc: 99.48%
+  Batch 250/391, Loss: 0.0087, Acc: 99.49%
+  Batch 300/391, Loss: 0.0298, Acc: 99.50%
+  Batch 350/391, Loss: 0.0218, Acc: 99.46%
+Train Loss: 0.0177, Train Acc: 99.46%
+Test Loss: 0.3386, Test Acc: 91.40%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 83/150 (LR: 0.000078) ===
+  Batch 0/391, Loss: 0.0493, Acc: 98.44%
+  Batch 50/391, Loss: 0.0096, Acc: 99.60%
+  Batch 100/391, Loss: 0.0036, Acc: 99.57%
+  Batch 150/391, Loss: 0.0045, Acc: 99.54%
+  Batch 200/391, Loss: 0.0416, Acc: 99.54%
+  Batch 250/391, Loss: 0.0039, Acc: 99.53%
+  Batch 300/391, Loss: 0.0492, Acc: 99.52%
+  Batch 350/391, Loss: 0.0101, Acc: 99.53%
+Train Loss: 0.0153, Train Acc: 99.54%
+Test Loss: 0.3300, Test Acc: 91.82%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 84/150 (LR: 0.000070) ===
+  Batch 0/391, Loss: 0.0056, Acc: 100.00%
+  Batch 50/391, Loss: 0.0090, Acc: 99.71%
+  Batch 100/391, Loss: 0.0125, Acc: 99.64%
+  Batch 150/391, Loss: 0.0065, Acc: 99.63%
+  Batch 200/391, Loss: 0.0059, Acc: 99.61%
+  Batch 250/391, Loss: 0.0029, Acc: 99.61%
+  Batch 300/391, Loss: 0.0035, Acc: 99.62%
+  Batch 350/391, Loss: 0.0142, Acc: 99.63%
+Train Loss: 0.0125, Train Acc: 99.64%
+Test Loss: 0.3460, Test Acc: 91.73%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 85/150 (LR: 0.000062) ===
+  Batch 0/391, Loss: 0.0079, Acc: 99.22%
+  Batch 50/391, Loss: 0.0094, Acc: 99.75%
+  Batch 100/391, Loss: 0.0301, Acc: 99.70%
+  Batch 150/391, Loss: 0.0103, Acc: 99.70%
+  Batch 200/391, Loss: 0.0096, Acc: 99.70%
+  Batch 250/391, Loss: 0.0057, Acc: 99.70%
+  Batch 300/391, Loss: 0.0167, Acc: 99.69%
+  Batch 350/391, Loss: 0.0084, Acc: 99.69%
+Train Loss: 0.0121, Train Acc: 99.68%
+Test Loss: 0.3297, Test Acc: 91.81%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 86/150 (LR: 0.000054) ===
+  Batch 0/391, Loss: 0.0037, Acc: 100.00%
+  Batch 50/391, Loss: 0.0185, Acc: 99.71%
+  Batch 100/391, Loss: 0.0158, Acc: 99.68%
+  Batch 150/391, Loss: 0.0053, Acc: 99.70%
+  Batch 200/391, Loss: 0.0060, Acc: 99.73%
+  Batch 250/391, Loss: 0.0024, Acc: 99.75%
+  Batch 300/391, Loss: 0.0017, Acc: 99.73%
+  Batch 350/391, Loss: 0.0258, Acc: 99.74%
+Train Loss: 0.0099, Train Acc: 99.74%
+Test Loss: 0.3269, Test Acc: 91.89%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 87/150 (LR: 0.000048) ===
+  Batch 0/391, Loss: 0.0099, Acc: 100.00%
+  Batch 50/391, Loss: 0.0229, Acc: 99.71%
+  Batch 100/391, Loss: 0.0061, Acc: 99.72%
+  Batch 150/391, Loss: 0.0048, Acc: 99.72%
+  Batch 200/391, Loss: 0.0082, Acc: 99.72%
+  Batch 250/391, Loss: 0.0063, Acc: 99.72%
+  Batch 300/391, Loss: 0.0111, Acc: 99.72%
+  Batch 350/391, Loss: 0.0138, Acc: 99.72%
+Train Loss: 0.0104, Train Acc: 99.72%
+Test Loss: 0.3216, Test Acc: 91.99%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 88/150 (LR: 0.000041) ===
+  Batch 0/391, Loss: 0.0029, Acc: 100.00%
+  Batch 50/391, Loss: 0.0048, Acc: 99.75%
+  Batch 100/391, Loss: 0.0040, Acc: 99.72%
+  Batch 150/391, Loss: 0.0050, Acc: 99.75%
+  Batch 200/391, Loss: 0.0088, Acc: 99.74%
+  Batch 250/391, Loss: 0.0260, Acc: 99.74%
+  Batch 300/391, Loss: 0.0044, Acc: 99.76%
+  Batch 350/391, Loss: 0.0072, Acc: 99.77%
+Train Loss: 0.0088, Train Acc: 99.77%
+Test Loss: 0.3180, Test Acc: 92.23%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 89/150 (LR: 0.000035) ===
+  Batch 0/391, Loss: 0.0121, Acc: 99.22%
+  Batch 50/391, Loss: 0.0025, Acc: 99.75%
+  Batch 100/391, Loss: 0.0049, Acc: 99.78%
+  Batch 150/391, Loss: 0.0046, Acc: 99.74%
+  Batch 200/391, Loss: 0.0118, Acc: 99.74%
+  Batch 250/391, Loss: 0.0042, Acc: 99.75%
+  Batch 300/391, Loss: 0.0124, Acc: 99.76%
+  Batch 350/391, Loss: 0.0011, Acc: 99.76%
+Train Loss: 0.0089, Train Acc: 99.77%
+Test Loss: 0.3194, Test Acc: 92.08%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 90/150 (LR: 0.000030) ===
+  Batch 0/391, Loss: 0.0037, Acc: 100.00%
+  Batch 50/391, Loss: 0.0089, Acc: 99.83%
+  Batch 100/391, Loss: 0.0116, Acc: 99.78%
+  Batch 150/391, Loss: 0.0110, Acc: 99.77%
+  Batch 200/391, Loss: 0.0056, Acc: 99.77%
+  Batch 250/391, Loss: 0.0070, Acc: 99.79%
+  Batch 300/391, Loss: 0.0179, Acc: 99.80%
+  Batch 350/391, Loss: 0.0092, Acc: 99.82%
+Train Loss: 0.0078, Train Acc: 99.83%
+Test Loss: 0.3070, Test Acc: 92.11%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 91/150 (LR: 0.000024) ===
+  Batch 0/391, Loss: 0.0101, Acc: 100.00%
+  Batch 50/391, Loss: 0.0030, Acc: 99.75%
+  Batch 100/391, Loss: 0.0029, Acc: 99.81%
+  Batch 150/391, Loss: 0.0023, Acc: 99.83%
+  Batch 200/391, Loss: 0.0076, Acc: 99.85%
+  Batch 250/391, Loss: 0.0035, Acc: 99.84%
+  Batch 300/391, Loss: 0.0031, Acc: 99.83%
+  Batch 350/391, Loss: 0.0041, Acc: 99.82%
+Train Loss: 0.0076, Train Acc: 99.82%
+Test Loss: 0.3051, Test Acc: 92.12%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 92/150 (LR: 0.000020) ===
+  Batch 0/391, Loss: 0.0022, Acc: 100.00%
+  Batch 50/391, Loss: 0.0017, Acc: 99.86%
+  Batch 100/391, Loss: 0.0242, Acc: 99.81%
+  Batch 150/391, Loss: 0.0101, Acc: 99.84%
+  Batch 200/391, Loss: 0.0033, Acc: 99.83%
+  Batch 250/391, Loss: 0.0030, Acc: 99.84%
+  Batch 300/391, Loss: 0.0016, Acc: 99.84%
+  Batch 350/391, Loss: 0.0071, Acc: 99.85%
+Train Loss: 0.0073, Train Acc: 99.84%
+Test Loss: 0.3029, Test Acc: 92.17%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 93/150 (LR: 0.000016) ===
+  Batch 0/391, Loss: 0.0030, Acc: 100.00%
+  Batch 50/391, Loss: 0.0144, Acc: 99.91%
+  Batch 100/391, Loss: 0.0132, Acc: 99.85%
+  Batch 150/391, Loss: 0.0059, Acc: 99.87%
+  Batch 200/391, Loss: 0.0024, Acc: 99.88%
+  Batch 250/391, Loss: 0.0110, Acc: 99.89%
+  Batch 300/391, Loss: 0.0063, Acc: 99.89%
+  Batch 350/391, Loss: 0.0062, Acc: 99.88%
+Train Loss: 0.0064, Train Acc: 99.88%
+Test Loss: 0.3009, Test Acc: 92.09%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 94/150 (LR: 0.000012) ===
+  Batch 0/391, Loss: 0.0078, Acc: 100.00%
+  Batch 50/391, Loss: 0.0021, Acc: 99.85%
+  Batch 100/391, Loss: 0.0039, Acc: 99.87%
+  Batch 150/391, Loss: 0.0018, Acc: 99.90%
+  Batch 200/391, Loss: 0.0061, Acc: 99.90%
+  Batch 250/391, Loss: 0.0062, Acc: 99.90%
+  Batch 300/391, Loss: 0.0035, Acc: 99.90%
+  Batch 350/391, Loss: 0.0199, Acc: 99.89%
+Train Loss: 0.0067, Train Acc: 99.88%
+Test Loss: 0.2938, Test Acc: 92.16%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 95/150 (LR: 0.000009) ===
+  Batch 0/391, Loss: 0.0141, Acc: 100.00%
+  Batch 50/391, Loss: 0.0017, Acc: 99.88%
+  Batch 100/391, Loss: 0.0026, Acc: 99.91%
+  Batch 150/391, Loss: 0.0050, Acc: 99.92%
+  Batch 200/391, Loss: 0.0016, Acc: 99.90%
+  Batch 250/391, Loss: 0.0066, Acc: 99.90%
+  Batch 300/391, Loss: 0.0075, Acc: 99.90%
+  Batch 350/391, Loss: 0.0069, Acc: 99.90%
+Train Loss: 0.0063, Train Acc: 99.90%
+Test Loss: 0.2934, Test Acc: 92.12%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 96/150 (LR: 0.000006) ===
+  Batch 0/391, Loss: 0.0017, Acc: 100.00%
+  Batch 50/391, Loss: 0.0081, Acc: 99.85%
+  Batch 100/391, Loss: 0.0075, Acc: 99.90%
+  Batch 150/391, Loss: 0.0044, Acc: 99.89%
+  Batch 200/391, Loss: 0.0052, Acc: 99.90%
+  Batch 250/391, Loss: 0.0044, Acc: 99.88%
+  Batch 300/391, Loss: 0.0066, Acc: 99.89%
+  Batch 350/391, Loss: 0.0018, Acc: 99.89%
+Train Loss: 0.0067, Train Acc: 99.89%
+Test Loss: 0.2899, Test Acc: 92.16%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 97/150 (LR: 0.000004) ===
+  Batch 0/391, Loss: 0.0061, Acc: 100.00%
+  Batch 50/391, Loss: 0.0022, Acc: 99.89%
+  Batch 100/391, Loss: 0.0049, Acc: 99.90%
+  Batch 150/391, Loss: 0.0071, Acc: 99.91%
+  Batch 200/391, Loss: 0.0028, Acc: 99.90%
+  Batch 250/391, Loss: 0.0047, Acc: 99.91%
+  Batch 300/391, Loss: 0.0127, Acc: 99.91%
+  Batch 350/391, Loss: 0.0057, Acc: 99.91%
+Train Loss: 0.0069, Train Acc: 99.91%
+Test Loss: 0.2838, Test Acc: 92.25%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 98/150 (LR: 0.000002) ===
+  Batch 0/391, Loss: 0.0055, Acc: 100.00%
+  Batch 50/391, Loss: 0.0052, Acc: 99.91%
+  Batch 100/391, Loss: 0.0025, Acc: 99.91%
+  Batch 150/391, Loss: 0.0070, Acc: 99.92%
+  Batch 200/391, Loss: 0.0063, Acc: 99.92%
+  Batch 250/391, Loss: 0.0021, Acc: 99.93%
+  Batch 300/391, Loss: 0.0050, Acc: 99.93%
+  Batch 350/391, Loss: 0.0034, Acc: 99.92%
+Train Loss: 0.0067, Train Acc: 99.91%
+Test Loss: 0.2798, Test Acc: 92.24%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 99/150 (LR: 0.000001) ===
+  Batch 0/391, Loss: 0.0080, Acc: 100.00%
+  Batch 50/391, Loss: 0.0098, Acc: 99.83%
+  Batch 100/391, Loss: 0.0032, Acc: 99.85%
+  Batch 150/391, Loss: 0.0046, Acc: 99.87%
+  Batch 200/391, Loss: 0.0053, Acc: 99.88%
+  Batch 250/391, Loss: 0.0066, Acc: 99.89%
+  Batch 300/391, Loss: 0.0238, Acc: 99.89%
+  Batch 350/391, Loss: 0.0116, Acc: 99.90%
+Train Loss: 0.0081, Train Acc: 99.88%
+Test Loss: 0.2778, Test Acc: 92.22%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 100/150 (LR: 0.000000) ===
+  Batch 0/391, Loss: 0.0066, Acc: 100.00%
+  Batch 50/391, Loss: 0.0045, Acc: 99.94%
+  Batch 100/391, Loss: 0.0085, Acc: 99.91%
+  Batch 150/391, Loss: 0.0064, Acc: 99.89%
+  Batch 200/391, Loss: 0.0144, Acc: 99.90%
+  Batch 250/391, Loss: 0.0068, Acc: 99.90%
+  Batch 300/391, Loss: 0.0023, Acc: 99.90%
+  Batch 350/391, Loss: 0.0087, Acc: 99.90%
+Train Loss: 0.0082, Train Acc: 99.89%
+Test Loss: 0.2730, Test Acc: 92.21%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 101/150 (LR: 0.000000) ===
+  Batch 0/391, Loss: 0.0035, Acc: 100.00%
+  Batch 50/391, Loss: 0.0064, Acc: 99.94%
+  Batch 100/391, Loss: 0.0061, Acc: 99.91%
+  Batch 150/391, Loss: 0.0048, Acc: 99.91%
+  Batch 200/391, Loss: 0.0156, Acc: 99.90%
+  Batch 250/391, Loss: 0.0066, Acc: 99.91%
+  Batch 300/391, Loss: 0.0069, Acc: 99.91%
+  Batch 350/391, Loss: 0.0029, Acc: 99.91%
+Train Loss: 0.0086, Train Acc: 99.90%
+Test Loss: 0.2702, Test Acc: 92.28%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 102/150 (LR: 0.000000) ===
+  Batch 0/391, Loss: 0.0056, Acc: 100.00%
+  Batch 50/391, Loss: 0.0068, Acc: 99.83%
+  Batch 100/391, Loss: 0.0138, Acc: 99.85%
+  Batch 150/391, Loss: 0.0037, Acc: 99.88%
+  Batch 200/391, Loss: 0.0102, Acc: 99.89%
+  Batch 250/391, Loss: 0.0025, Acc: 99.88%
+  Batch 300/391, Loss: 0.0121, Acc: 99.90%
+  Batch 350/391, Loss: 0.0033, Acc: 99.90%
+Train Loss: 0.0091, Train Acc: 99.90%
+Test Loss: 0.2696, Test Acc: 92.14%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 103/150 (LR: 0.000001) ===
+  Batch 0/391, Loss: 0.0068, Acc: 100.00%
+  Batch 50/391, Loss: 0.0334, Acc: 99.86%
+  Batch 100/391, Loss: 0.0090, Acc: 99.87%
+  Batch 150/391, Loss: 0.0027, Acc: 99.87%
+  Batch 200/391, Loss: 0.0049, Acc: 99.88%
+  Batch 250/391, Loss: 0.0045, Acc: 99.88%
+  Batch 300/391, Loss: 0.0085, Acc: 99.88%
+  Batch 350/391, Loss: 0.0143, Acc: 99.89%
+Train Loss: 0.0097, Train Acc: 99.89%
+Test Loss: 0.2663, Test Acc: 92.17%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 104/150 (LR: 0.000002) ===
+  Batch 0/391, Loss: 0.0049, Acc: 100.00%
+  Batch 50/391, Loss: 0.0056, Acc: 99.94%
+  Batch 100/391, Loss: 0.0047, Acc: 99.95%
+  Batch 150/391, Loss: 0.0083, Acc: 99.89%
+  Batch 200/391, Loss: 0.0131, Acc: 99.88%
+  Batch 250/391, Loss: 0.0076, Acc: 99.88%
+  Batch 300/391, Loss: 0.0102, Acc: 99.88%
+  Batch 350/391, Loss: 0.0042, Acc: 99.88%
+Train Loss: 0.0101, Train Acc: 99.88%
+Test Loss: 0.2621, Test Acc: 92.21%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 105/150 (LR: 0.000004) ===
+  Batch 0/391, Loss: 0.0242, Acc: 99.22%
+  Batch 50/391, Loss: 0.0135, Acc: 99.86%
+  Batch 100/391, Loss: 0.0153, Acc: 99.88%
+  Batch 150/391, Loss: 0.0099, Acc: 99.90%
+  Batch 200/391, Loss: 0.0135, Acc: 99.90%
+  Batch 250/391, Loss: 0.0060, Acc: 99.88%
+  Batch 300/391, Loss: 0.0048, Acc: 99.89%
+  Batch 350/391, Loss: 0.0124, Acc: 99.89%
+Train Loss: 0.0103, Train Acc: 99.88%
+Test Loss: 0.2660, Test Acc: 92.22%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 106/150 (LR: 0.000006) ===
+  Batch 0/391, Loss: 0.0222, Acc: 98.44%
+  Batch 50/391, Loss: 0.0087, Acc: 99.83%
+  Batch 100/391, Loss: 0.0113, Acc: 99.86%
+  Batch 150/391, Loss: 0.0117, Acc: 99.88%
+  Batch 200/391, Loss: 0.0042, Acc: 99.88%
+  Batch 250/391, Loss: 0.0158, Acc: 99.88%
+  Batch 300/391, Loss: 0.0066, Acc: 99.88%
+  Batch 350/391, Loss: 0.0049, Acc: 99.88%
+Train Loss: 0.0101, Train Acc: 99.88%
+Test Loss: 0.2637, Test Acc: 92.30%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 107/150 (LR: 0.000009) ===
+  Batch 0/391, Loss: 0.0051, Acc: 100.00%
+  Batch 50/391, Loss: 0.0100, Acc: 99.88%
+  Batch 100/391, Loss: 0.0062, Acc: 99.88%
+  Batch 150/391, Loss: 0.0116, Acc: 99.89%
+  Batch 200/391, Loss: 0.0200, Acc: 99.86%
+  Batch 250/391, Loss: 0.0037, Acc: 99.88%
+  Batch 300/391, Loss: 0.0232, Acc: 99.88%
+  Batch 350/391, Loss: 0.0058, Acc: 99.89%
+Train Loss: 0.0102, Train Acc: 99.88%
+Test Loss: 0.2641, Test Acc: 92.26%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 108/150 (LR: 0.000012) ===
+  Batch 0/391, Loss: 0.0072, Acc: 100.00%
+  Batch 50/391, Loss: 0.0183, Acc: 99.94%
+  Batch 100/391, Loss: 0.0083, Acc: 99.93%
+  Batch 150/391, Loss: 0.0080, Acc: 99.91%
+  Batch 200/391, Loss: 0.0045, Acc: 99.91%
+  Batch 250/391, Loss: 0.0160, Acc: 99.91%
+  Batch 300/391, Loss: 0.0045, Acc: 99.91%
+  Batch 350/391, Loss: 0.0056, Acc: 99.92%
+Train Loss: 0.0097, Train Acc: 99.91%
+Test Loss: 0.2635, Test Acc: 92.20%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 109/150 (LR: 0.000016) ===
+  Batch 0/391, Loss: 0.0089, Acc: 100.00%
+  Batch 50/391, Loss: 0.0248, Acc: 99.88%
+  Batch 100/391, Loss: 0.0089, Acc: 99.89%
+  Batch 150/391, Loss: 0.0046, Acc: 99.90%
+  Batch 200/391, Loss: 0.0076, Acc: 99.90%
+  Batch 250/391, Loss: 0.0098, Acc: 99.90%
+  Batch 300/391, Loss: 0.0046, Acc: 99.91%
+  Batch 350/391, Loss: 0.0075, Acc: 99.91%
+Train Loss: 0.0095, Train Acc: 99.92%
+Test Loss: 0.2696, Test Acc: 92.07%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 110/150 (LR: 0.000020) ===
+  Batch 0/391, Loss: 0.0212, Acc: 100.00%
+  Batch 50/391, Loss: 0.0039, Acc: 99.95%
+  Batch 100/391, Loss: 0.0060, Acc: 99.95%
+  Batch 150/391, Loss: 0.0082, Acc: 99.92%
+  Batch 200/391, Loss: 0.0040, Acc: 99.91%
+  Batch 250/391, Loss: 0.0059, Acc: 99.89%
+  Batch 300/391, Loss: 0.0124, Acc: 99.90%
+  Batch 350/391, Loss: 0.0043, Acc: 99.91%
+Train Loss: 0.0089, Train Acc: 99.90%
+Test Loss: 0.2750, Test Acc: 92.34%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 111/150 (LR: 0.000024) ===
+  Batch 0/391, Loss: 0.0059, Acc: 100.00%
+  Batch 50/391, Loss: 0.0099, Acc: 99.91%
+  Batch 100/391, Loss: 0.0067, Acc: 99.91%
+  Batch 150/391, Loss: 0.0035, Acc: 99.90%
+  Batch 200/391, Loss: 0.0047, Acc: 99.89%
+  Batch 250/391, Loss: 0.0052, Acc: 99.88%
+  Batch 300/391, Loss: 0.0058, Acc: 99.89%
+  Batch 350/391, Loss: 0.0030, Acc: 99.87%
+Train Loss: 0.0088, Train Acc: 99.87%
+Test Loss: 0.2762, Test Acc: 92.12%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 112/150 (LR: 0.000030) ===
+  Batch 0/391, Loss: 0.0043, Acc: 100.00%
+  Batch 50/391, Loss: 0.0066, Acc: 99.83%
+  Batch 100/391, Loss: 0.0061, Acc: 99.84%
+  Batch 150/391, Loss: 0.0156, Acc: 99.87%
+  Batch 200/391, Loss: 0.0072, Acc: 99.88%
+  Batch 250/391, Loss: 0.0183, Acc: 99.89%
+  Batch 300/391, Loss: 0.0045, Acc: 99.90%
+  Batch 350/391, Loss: 0.0093, Acc: 99.90%
+Train Loss: 0.0081, Train Acc: 99.90%
+Test Loss: 0.2930, Test Acc: 92.17%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 113/150 (LR: 0.000035) ===
+  Batch 0/391, Loss: 0.0088, Acc: 100.00%
+  Batch 50/391, Loss: 0.0210, Acc: 99.88%
+  Batch 100/391, Loss: 0.0009, Acc: 99.85%
+  Batch 150/391, Loss: 0.0034, Acc: 99.84%
+  Batch 200/391, Loss: 0.0036, Acc: 99.88%
+  Batch 250/391, Loss: 0.0078, Acc: 99.88%
+  Batch 300/391, Loss: 0.0090, Acc: 99.87%
+  Batch 350/391, Loss: 0.0025, Acc: 99.87%
+Train Loss: 0.0082, Train Acc: 99.87%
+Test Loss: 0.2944, Test Acc: 92.06%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 114/150 (LR: 0.000041) ===
+  Batch 0/391, Loss: 0.0055, Acc: 100.00%
+  Batch 50/391, Loss: 0.0029, Acc: 99.77%
+  Batch 100/391, Loss: 0.0037, Acc: 99.84%
+  Batch 150/391, Loss: 0.0079, Acc: 99.84%
+  Batch 200/391, Loss: 0.0188, Acc: 99.84%
+  Batch 250/391, Loss: 0.0132, Acc: 99.83%
+  Batch 300/391, Loss: 0.0043, Acc: 99.83%
+  Batch 350/391, Loss: 0.0057, Acc: 99.82%
+Train Loss: 0.0085, Train Acc: 99.82%
+Test Loss: 0.3001, Test Acc: 92.09%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 115/150 (LR: 0.000048) ===
+  Batch 0/391, Loss: 0.0079, Acc: 100.00%
+  Batch 50/391, Loss: 0.0074, Acc: 99.82%
+  Batch 100/391, Loss: 0.0121, Acc: 99.85%
+  Batch 150/391, Loss: 0.0092, Acc: 99.87%
+  Batch 200/391, Loss: 0.0068, Acc: 99.85%
+  Batch 250/391, Loss: 0.0053, Acc: 99.85%
+  Batch 300/391, Loss: 0.0237, Acc: 99.83%
+  Batch 350/391, Loss: 0.0364, Acc: 99.83%
+Train Loss: 0.0079, Train Acc: 99.83%
+Test Loss: 0.3168, Test Acc: 91.82%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 116/150 (LR: 0.000054) ===
+  Batch 0/391, Loss: 0.0026, Acc: 100.00%
+  Batch 50/391, Loss: 0.0149, Acc: 99.72%
+  Batch 100/391, Loss: 0.0216, Acc: 99.76%
+  Batch 150/391, Loss: 0.0047, Acc: 99.77%
+  Batch 200/391, Loss: 0.0029, Acc: 99.76%
+  Batch 250/391, Loss: 0.0093, Acc: 99.77%
+  Batch 300/391, Loss: 0.0042, Acc: 99.79%
+  Batch 350/391, Loss: 0.0050, Acc: 99.79%
+Train Loss: 0.0092, Train Acc: 99.78%
+Test Loss: 0.3165, Test Acc: 91.91%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 117/150 (LR: 0.000062) ===
+  Batch 0/391, Loss: 0.0110, Acc: 100.00%
+  Batch 50/391, Loss: 0.0069, Acc: 99.82%
+  Batch 100/391, Loss: 0.0080, Acc: 99.80%
+  Batch 150/391, Loss: 0.0036, Acc: 99.78%
+  Batch 200/391, Loss: 0.0036, Acc: 99.79%
+  Batch 250/391, Loss: 0.0058, Acc: 99.78%
+  Batch 300/391, Loss: 0.0551, Acc: 99.75%
+  Batch 350/391, Loss: 0.0183, Acc: 99.74%
+Train Loss: 0.0097, Train Acc: 99.75%
+Test Loss: 0.3230, Test Acc: 91.58%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 118/150 (LR: 0.000070) ===
+  Batch 0/391, Loss: 0.0034, Acc: 100.00%
+  Batch 50/391, Loss: 0.0095, Acc: 99.63%
+  Batch 100/391, Loss: 0.0092, Acc: 99.64%
+  Batch 150/391, Loss: 0.0114, Acc: 99.63%
+  Batch 200/391, Loss: 0.0271, Acc: 99.67%
+  Batch 250/391, Loss: 0.0178, Acc: 99.66%
+  Batch 300/391, Loss: 0.0310, Acc: 99.68%
+  Batch 350/391, Loss: 0.0176, Acc: 99.68%
+Train Loss: 0.0114, Train Acc: 99.67%
+Test Loss: 0.3395, Test Acc: 91.53%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 119/150 (LR: 0.000078) ===
+  Batch 0/391, Loss: 0.0102, Acc: 100.00%
+  Batch 50/391, Loss: 0.0351, Acc: 99.62%
+  Batch 100/391, Loss: 0.0056, Acc: 99.65%
+  Batch 150/391, Loss: 0.0053, Acc: 99.63%
+  Batch 200/391, Loss: 0.0056, Acc: 99.63%
+  Batch 250/391, Loss: 0.0033, Acc: 99.61%
+  Batch 300/391, Loss: 0.0298, Acc: 99.62%
+  Batch 350/391, Loss: 0.0045, Acc: 99.61%
+Train Loss: 0.0135, Train Acc: 99.61%
+Test Loss: 0.3621, Test Acc: 91.46%
+Unique weight values per layer: min=15, max=15, avg=15.0
+
+=== Epoch 120/150 (LR: 0.000086) ===
+  Batch 0/391, Loss: 0.0162, Acc: 99.22%
+  Batch 50/391, Loss: 0.0094, Acc: 99.51%
+  Batch 100/391, Loss: 0.0098, Acc: 99.51%
+  Batch 150/391, Loss: 0.0108, Acc: 99.51%
+  Batch 200/391, Loss: 0.0360, Acc: 99.49%
+  Batch 250/391, Loss: 0.0073, Acc: 99.51%
+  Batch 300/391, Loss: 0.0306, Acc: 99.50%
+  Batch 350/391, Loss: 0.0088, Acc: 99.52%
+Train Loss: 0.0165, Train Acc: 99.51%
+Test Loss: 0.3717, Test Acc: 90.92%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 121/150 (LR: 0.000095) ===
+  Batch 0/391, Loss: 0.0373, Acc: 97.66%
+  Batch 50/391, Loss: 0.0162, Acc: 99.53%
+  Batch 100/391, Loss: 0.0084, Acc: 99.47%
+  Batch 150/391, Loss: 0.0244, Acc: 99.51%
+  Batch 200/391, Loss: 0.0236, Acc: 99.51%
+  Batch 250/391, Loss: 0.0068, Acc: 99.44%
+  Batch 300/391, Loss: 0.0145, Acc: 99.45%
+  Batch 350/391, Loss: 0.0153, Acc: 99.42%
+Train Loss: 0.0191, Train Acc: 99.40%
+Test Loss: 0.3747, Test Acc: 91.00%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 122/150 (LR: 0.000105) ===
+  Batch 0/391, Loss: 0.0060, Acc: 100.00%
+  Batch 50/391, Loss: 0.0026, Acc: 99.43%
+  Batch 100/391, Loss: 0.0188, Acc: 99.47%
+  Batch 150/391, Loss: 0.0300, Acc: 99.46%
+  Batch 200/391, Loss: 0.0129, Acc: 99.40%
+  Batch 250/391, Loss: 0.0174, Acc: 99.31%
+  Batch 300/391, Loss: 0.0446, Acc: 99.29%
+  Batch 350/391, Loss: 0.0033, Acc: 99.29%
+Train Loss: 0.0220, Train Acc: 99.28%
+Test Loss: 0.3834, Test Acc: 90.82%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 123/150 (LR: 0.000115) ===
+  Batch 0/391, Loss: 0.0224, Acc: 99.22%
+  Batch 50/391, Loss: 0.0129, Acc: 99.34%
+  Batch 100/391, Loss: 0.0062, Acc: 99.28%
+  Batch 150/391, Loss: 0.0265, Acc: 99.15%
+  Batch 200/391, Loss: 0.0624, Acc: 99.13%
+  Batch 250/391, Loss: 0.0341, Acc: 99.14%
+  Batch 300/391, Loss: 0.0126, Acc: 99.11%
+  Batch 350/391, Loss: 0.0616, Acc: 99.11%
+Train Loss: 0.0264, Train Acc: 99.11%
+Test Loss: 0.3849, Test Acc: 90.66%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 124/150 (LR: 0.000125) ===
+  Batch 0/391, Loss: 0.0062, Acc: 100.00%
+  Batch 50/391, Loss: 0.0249, Acc: 99.25%
+  Batch 100/391, Loss: 0.0136, Acc: 99.12%
+  Batch 150/391, Loss: 0.0336, Acc: 99.13%
+  Batch 200/391, Loss: 0.0474, Acc: 99.10%
+  Batch 250/391, Loss: 0.0577, Acc: 99.04%
+  Batch 300/391, Loss: 0.0170, Acc: 98.98%
+  Batch 350/391, Loss: 0.0182, Acc: 98.97%
+Train Loss: 0.0310, Train Acc: 98.96%
+Test Loss: 0.4037, Test Acc: 90.41%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 125/150 (LR: 0.000136) ===
+  Batch 0/391, Loss: 0.0240, Acc: 98.44%
+  Batch 50/391, Loss: 0.0519, Acc: 98.93%
+  Batch 100/391, Loss: 0.0480, Acc: 98.98%
+  Batch 150/391, Loss: 0.0165, Acc: 98.87%
+  Batch 200/391, Loss: 0.0269, Acc: 98.78%
+  Batch 250/391, Loss: 0.0625, Acc: 98.70%
+  Batch 300/391, Loss: 0.0066, Acc: 98.69%
+  Batch 350/391, Loss: 0.0107, Acc: 98.67%
+Train Loss: 0.0384, Train Acc: 98.65%
+Test Loss: 0.3919, Test Acc: 90.45%
+Unique weight values per layer: min=14, max=15, avg=14.9
+
+=== Epoch 126/150 (LR: 0.000146) ===
+  Batch 0/391, Loss: 0.0570, Acc: 98.44%
+  Batch 50/391, Loss: 0.0188, Acc: 98.81%
+  Batch 100/391, Loss: 0.0322, Acc: 98.68%
+  Batch 150/391, Loss: 0.0248, Acc: 98.55%
+  Batch 200/391, Loss: 0.0244, Acc: 98.59%
+  Batch 250/391, Loss: 0.0933, Acc: 98.58%
+  Batch 300/391, Loss: 0.0166, Acc: 98.53%
+  Batch 350/391, Loss: 0.0214, Acc: 98.54%
+Train Loss: 0.0433, Train Acc: 98.52%
+Test Loss: 0.3963, Test Acc: 90.35%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 127/150 (LR: 0.000158) ===
+  Batch 0/391, Loss: 0.0134, Acc: 99.22%
+  Batch 50/391, Loss: 0.0262, Acc: 98.48%
+  Batch 100/391, Loss: 0.0706, Acc: 98.62%
+  Batch 150/391, Loss: 0.0189, Acc: 98.61%
+  Batch 200/391, Loss: 0.0592, Acc: 98.53%
+  Batch 250/391, Loss: 0.0169, Acc: 98.54%
+  Batch 300/391, Loss: 0.0155, Acc: 98.51%
+  Batch 350/391, Loss: 0.1092, Acc: 98.43%
+Train Loss: 0.0466, Train Acc: 98.40%
+Test Loss: 0.3832, Test Acc: 90.40%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 128/150 (LR: 0.000169) ===
+  Batch 0/391, Loss: 0.0951, Acc: 96.88%
+  Batch 50/391, Loss: 0.0384, Acc: 98.31%
+  Batch 100/391, Loss: 0.0543, Acc: 98.37%
+  Batch 150/391, Loss: 0.0605, Acc: 98.37%
+  Batch 200/391, Loss: 0.0909, Acc: 98.35%
+  Batch 250/391, Loss: 0.0156, Acc: 98.35%
+  Batch 300/391, Loss: 0.0663, Acc: 98.28%
+  Batch 350/391, Loss: 0.0349, Acc: 98.22%
+Train Loss: 0.0530, Train Acc: 98.17%
+Test Loss: 0.3699, Test Acc: 90.35%
+Unique weight values per layer: min=14, max=15, avg=14.8
+
+=== Epoch 129/150 (LR: 0.000181) ===
+  Batch 0/391, Loss: 0.0750, Acc: 96.09%
+  Batch 50/391, Loss: 0.0680, Acc: 98.45%
+  Batch 100/391, Loss: 0.0284, Acc: 98.24%
+  Batch 150/391, Loss: 0.0472, Acc: 98.19%
+  Batch 200/391, Loss: 0.0572, Acc: 98.04%
+  Batch 250/391, Loss: 0.0732, Acc: 97.97%
+  Batch 300/391, Loss: 0.0614, Acc: 97.94%
+  Batch 350/391, Loss: 0.0370, Acc: 97.90%
+Train Loss: 0.0610, Train Acc: 97.89%
+Test Loss: 0.4110, Test Acc: 89.60%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 130/150 (LR: 0.000194) ===
+  Batch 0/391, Loss: 0.0156, Acc: 100.00%
+  Batch 50/391, Loss: 0.0507, Acc: 98.15%
+  Batch 100/391, Loss: 0.0533, Acc: 98.04%
+  Batch 150/391, Loss: 0.0879, Acc: 98.00%
+  Batch 200/391, Loss: 0.0453, Acc: 97.94%
+  Batch 250/391, Loss: 0.0286, Acc: 97.92%
+  Batch 300/391, Loss: 0.0326, Acc: 97.86%
+  Batch 350/391, Loss: 0.0361, Acc: 97.84%
+Train Loss: 0.0620, Train Acc: 97.85%
+Test Loss: 0.4028, Test Acc: 90.01%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 131/150 (LR: 0.000206) ===
+  Batch 0/391, Loss: 0.0716, Acc: 96.09%
+  Batch 50/391, Loss: 0.0554, Acc: 97.76%
+  Batch 100/391, Loss: 0.0781, Acc: 97.50%
+  Batch 150/391, Loss: 0.0731, Acc: 97.46%
+  Batch 200/391, Loss: 0.0386, Acc: 97.46%
+  Batch 250/391, Loss: 0.0838, Acc: 97.47%
+  Batch 300/391, Loss: 0.0669, Acc: 97.52%
+  Batch 350/391, Loss: 0.0685, Acc: 97.51%
+Train Loss: 0.0721, Train Acc: 97.45%
+Test Loss: 0.3942, Test Acc: 89.68%
+Unique weight values per layer: min=14, max=15, avg=14.5
+
+=== Epoch 132/150 (LR: 0.000219) ===
+  Batch 0/391, Loss: 0.0423, Acc: 98.44%
+  Batch 50/391, Loss: 0.0578, Acc: 97.52%
+  Batch 100/391, Loss: 0.0449, Acc: 97.52%
+  Batch 150/391, Loss: 0.0421, Acc: 97.46%
+  Batch 200/391, Loss: 0.0280, Acc: 97.44%
+  Batch 250/391, Loss: 0.0507, Acc: 97.42%
+  Batch 300/391, Loss: 0.1221, Acc: 97.37%
+  Batch 350/391, Loss: 0.0989, Acc: 97.35%
+Train Loss: 0.0766, Train Acc: 97.32%
+Test Loss: 0.3887, Test Acc: 89.88%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 133/150 (LR: 0.000232) ===
+  Batch 0/391, Loss: 0.0404, Acc: 98.44%
+  Batch 50/391, Loss: 0.0153, Acc: 97.56%
+  Batch 100/391, Loss: 0.0740, Acc: 97.40%
+  Batch 150/391, Loss: 0.0455, Acc: 97.39%
+  Batch 200/391, Loss: 0.0831, Acc: 97.33%
+  Batch 250/391, Loss: 0.0903, Acc: 97.32%
+  Batch 300/391, Loss: 0.1625, Acc: 97.32%
+  Batch 350/391, Loss: 0.0779, Acc: 97.28%
+Train Loss: 0.0793, Train Acc: 97.27%
+Test Loss: 0.3995, Test Acc: 89.61%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 134/150 (LR: 0.000245) ===
+  Batch 0/391, Loss: 0.0572, Acc: 98.44%
+  Batch 50/391, Loss: 0.0514, Acc: 97.44%
+  Batch 100/391, Loss: 0.1041, Acc: 97.32%
+  Batch 150/391, Loss: 0.0321, Acc: 97.25%
+  Batch 200/391, Loss: 0.1214, Acc: 97.15%
+  Batch 250/391, Loss: 0.0700, Acc: 97.05%
+  Batch 300/391, Loss: 0.1146, Acc: 97.05%
+  Batch 350/391, Loss: 0.1000, Acc: 97.04%
+Train Loss: 0.0855, Train Acc: 97.04%
+Test Loss: 0.4516, Test Acc: 88.85%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 135/150 (LR: 0.000259) ===
+  Batch 0/391, Loss: 0.0254, Acc: 99.22%
+  Batch 50/391, Loss: 0.0762, Acc: 96.80%
+  Batch 100/391, Loss: 0.0737, Acc: 97.03%
+  Batch 150/391, Loss: 0.0824, Acc: 97.00%
+  Batch 200/391, Loss: 0.2309, Acc: 96.93%
+  Batch 250/391, Loss: 0.1578, Acc: 96.88%
+  Batch 300/391, Loss: 0.0404, Acc: 96.87%
+  Batch 350/391, Loss: 0.0781, Acc: 96.83%
+Train Loss: 0.0907, Train Acc: 96.82%
+Test Loss: 0.4518, Test Acc: 88.41%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 136/150 (LR: 0.000273) ===
+  Batch 0/391, Loss: 0.1639, Acc: 93.75%
+  Batch 50/391, Loss: 0.0415, Acc: 96.75%
+  Batch 100/391, Loss: 0.1221, Acc: 96.77%
+  Batch 150/391, Loss: 0.0456, Acc: 96.85%
+  Batch 200/391, Loss: 0.1082, Acc: 96.77%
+  Batch 250/391, Loss: 0.1021, Acc: 96.62%
+  Batch 300/391, Loss: 0.0727, Acc: 96.63%
+  Batch 350/391, Loss: 0.0936, Acc: 96.59%
+Train Loss: 0.0998, Train Acc: 96.55%
+Test Loss: 0.4291, Test Acc: 88.92%
+Unique weight values per layer: min=13, max=15, avg=14.1
+
+=== Epoch 137/150 (LR: 0.000287) ===
+  Batch 0/391, Loss: 0.1606, Acc: 95.31%
+  Batch 50/391, Loss: 0.0594, Acc: 96.49%
+  Batch 100/391, Loss: 0.1012, Acc: 96.66%
+  Batch 150/391, Loss: 0.1806, Acc: 96.66%
+  Batch 200/391, Loss: 0.0952, Acc: 96.66%
+  Batch 250/391, Loss: 0.0866, Acc: 96.55%
+  Batch 300/391, Loss: 0.1409, Acc: 96.51%
+  Batch 350/391, Loss: 0.0392, Acc: 96.47%
+Train Loss: 0.1038, Train Acc: 96.42%
+Test Loss: 0.4135, Test Acc: 89.36%
+Unique weight values per layer: min=13, max=15, avg=14.5
+
+=== Epoch 138/150 (LR: 0.000301) ===
+  Batch 0/391, Loss: 0.0513, Acc: 98.44%
+  Batch 50/391, Loss: 0.0370, Acc: 97.27%
+  Batch 100/391, Loss: 0.1236, Acc: 96.80%
+  Batch 150/391, Loss: 0.1271, Acc: 96.66%
+  Batch 200/391, Loss: 0.1933, Acc: 96.60%
+  Batch 250/391, Loss: 0.0474, Acc: 96.54%
+  Batch 300/391, Loss: 0.1121, Acc: 96.52%
+  Batch 350/391, Loss: 0.1774, Acc: 96.46%
+Train Loss: 0.1058, Train Acc: 96.40%
+Test Loss: 0.3919, Test Acc: 89.69%
+Unique weight values per layer: min=14, max=15, avg=14.2
+
+=== Epoch 139/150 (LR: 0.000316) ===
+  Batch 0/391, Loss: 0.1365, Acc: 96.09%
+  Batch 50/391, Loss: 0.0957, Acc: 97.15%
+  Batch 100/391, Loss: 0.1041, Acc: 96.92%
+  Batch 150/391, Loss: 0.0342, Acc: 96.74%
+  Batch 200/391, Loss: 0.0995, Acc: 96.60%
+  Batch 250/391, Loss: 0.1068, Acc: 96.49%
+  Batch 300/391, Loss: 0.0854, Acc: 96.47%
+  Batch 350/391, Loss: 0.1256, Acc: 96.37%
+Train Loss: 0.1071, Train Acc: 96.31%
+Test Loss: 0.4007, Test Acc: 89.31%
+Unique weight values per layer: min=13, max=15, avg=14.1
+
+=== Epoch 140/150 (LR: 0.000331) ===
+  Batch 0/391, Loss: 0.0786, Acc: 96.09%
+  Batch 50/391, Loss: 0.1812, Acc: 96.26%
+  Batch 100/391, Loss: 0.1329, Acc: 96.26%
+  Batch 150/391, Loss: 0.0832, Acc: 96.18%
+  Batch 200/391, Loss: 0.0540, Acc: 96.12%
+  Batch 250/391, Loss: 0.2051, Acc: 96.12%
+  Batch 300/391, Loss: 0.2184, Acc: 95.99%
+  Batch 350/391, Loss: 0.1553, Acc: 95.92%
+Train Loss: 0.1210, Train Acc: 95.87%
+Test Loss: 0.4333, Test Acc: 87.96%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 141/150 (LR: 0.000345) ===
+  Batch 0/391, Loss: 0.1009, Acc: 93.75%
+  Batch 50/391, Loss: 0.0891, Acc: 96.09%
+  Batch 100/391, Loss: 0.1062, Acc: 96.00%
+  Batch 150/391, Loss: 0.1242, Acc: 96.04%
+  Batch 200/391, Loss: 0.1109, Acc: 96.00%
+  Batch 250/391, Loss: 0.1107, Acc: 95.85%
+  Batch 300/391, Loss: 0.0707, Acc: 95.85%
+  Batch 350/391, Loss: 0.0797, Acc: 95.78%
+Train Loss: 0.1226, Train Acc: 95.75%
+Test Loss: 0.4439, Test Acc: 88.09%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 142/150 (LR: 0.000361) ===
+  Batch 0/391, Loss: 0.0631, Acc: 98.44%
+  Batch 50/391, Loss: 0.0851, Acc: 96.14%
+  Batch 100/391, Loss: 0.0879, Acc: 95.93%
+  Batch 150/391, Loss: 0.1312, Acc: 96.06%
+  Batch 200/391, Loss: 0.2597, Acc: 95.95%
+  Batch 250/391, Loss: 0.1444, Acc: 95.82%
+  Batch 300/391, Loss: 0.1370, Acc: 95.83%
+  Batch 350/391, Loss: 0.1607, Acc: 95.75%
+Train Loss: 0.1224, Train Acc: 95.70%
+Test Loss: 0.3884, Test Acc: 89.02%
+Unique weight values per layer: min=14, max=15, avg=14.2
+
+=== Epoch 143/150 (LR: 0.000376) ===
+  Batch 0/391, Loss: 0.0922, Acc: 96.88%
+  Batch 50/391, Loss: 0.1665, Acc: 96.00%
+  Batch 100/391, Loss: 0.1325, Acc: 95.82%
+  Batch 150/391, Loss: 0.1738, Acc: 95.84%
+  Batch 200/391, Loss: 0.1903, Acc: 95.74%
+  Batch 250/391, Loss: 0.0837, Acc: 95.70%
+  Batch 300/391, Loss: 0.0661, Acc: 95.65%
+  Batch 350/391, Loss: 0.0943, Acc: 95.68%
+Train Loss: 0.1234, Train Acc: 95.62%
+Test Loss: 0.4366, Test Acc: 87.83%
+Unique weight values per layer: min=14, max=15, avg=14.1
+
+=== Epoch 144/150 (LR: 0.000391) ===
+  Batch 0/391, Loss: 0.1624, Acc: 96.09%
+  Batch 50/391, Loss: 0.0850, Acc: 96.00%
+  Batch 100/391, Loss: 0.0849, Acc: 95.88%
+  Batch 150/391, Loss: 0.0898, Acc: 95.76%
+  Batch 200/391, Loss: 0.1228, Acc: 95.71%
+  Batch 250/391, Loss: 0.2000, Acc: 95.74%
+  Batch 300/391, Loss: 0.0883, Acc: 95.74%
+  Batch 350/391, Loss: 0.1618, Acc: 95.65%
+Train Loss: 0.1290, Train Acc: 95.58%
+Test Loss: 0.3935, Test Acc: 89.24%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 145/150 (LR: 0.000406) ===
+  Batch 0/391, Loss: 0.0842, Acc: 97.66%
+  Batch 50/391, Loss: 0.1237, Acc: 96.03%
+  Batch 100/391, Loss: 0.1194, Acc: 95.82%
+  Batch 150/391, Loss: 0.1238, Acc: 95.87%
+  Batch 200/391, Loss: 0.1250, Acc: 95.68%
+  Batch 250/391, Loss: 0.0616, Acc: 95.69%
+  Batch 300/391, Loss: 0.1211, Acc: 95.66%
+  Batch 350/391, Loss: 0.1285, Acc: 95.64%
+Train Loss: 0.1255, Train Acc: 95.65%
+Test Loss: 0.4107, Test Acc: 88.86%
+Unique weight values per layer: min=13, max=15, avg=14.4
+
+=== Epoch 146/150 (LR: 0.000422) ===
+  Batch 0/391, Loss: 0.1167, Acc: 96.09%
+  Batch 50/391, Loss: 0.1244, Acc: 96.03%
+  Batch 100/391, Loss: 0.0792, Acc: 95.88%
+  Batch 150/391, Loss: 0.1127, Acc: 95.81%
+  Batch 200/391, Loss: 0.0676, Acc: 95.67%
+  Batch 250/391, Loss: 0.0992, Acc: 95.64%
+  Batch 300/391, Loss: 0.1056, Acc: 95.55%
+  Batch 350/391, Loss: 0.0484, Acc: 95.51%
+Train Loss: 0.1309, Train Acc: 95.41%
+Test Loss: 0.4020, Test Acc: 88.84%
+Unique weight values per layer: min=14, max=15, avg=14.4
+
+=== Epoch 147/150 (LR: 0.000437) ===
+  Batch 0/391, Loss: 0.0921, Acc: 97.66%
+  Batch 50/391, Loss: 0.1372, Acc: 95.71%
+  Batch 100/391, Loss: 0.1599, Acc: 95.78%
+  Batch 150/391, Loss: 0.2426, Acc: 95.52%
+  Batch 200/391, Loss: 0.0636, Acc: 95.48%
+  Batch 250/391, Loss: 0.1613, Acc: 95.41%
+  Batch 300/391, Loss: 0.0558, Acc: 95.38%
+  Batch 350/391, Loss: 0.1419, Acc: 95.32%
+Train Loss: 0.1338, Train Acc: 95.33%
+Test Loss: 0.3676, Test Acc: 89.30%
+Unique weight values per layer: min=13, max=15, avg=14.2
+
+=== Epoch 148/150 (LR: 0.000453) ===
+  Batch 0/391, Loss: 0.0971, Acc: 97.66%
+  Batch 50/391, Loss: 0.1493, Acc: 95.63%
+  Batch 100/391, Loss: 0.0513, Acc: 95.63%
+  Batch 150/391, Loss: 0.1326, Acc: 95.74%
+  Batch 200/391, Loss: 0.0994, Acc: 95.55%
+  Batch 250/391, Loss: 0.2258, Acc: 95.47%
+  Batch 300/391, Loss: 0.1736, Acc: 95.44%
+  Batch 350/391, Loss: 0.1110, Acc: 95.41%
+Train Loss: 0.1351, Train Acc: 95.33%
+Test Loss: 0.4273, Test Acc: 88.16%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Epoch 149/150 (LR: 0.000469) ===
+  Batch 0/391, Loss: 0.2169, Acc: 92.19%
+  Batch 50/391, Loss: 0.1091, Acc: 96.16%
+  Batch 100/391, Loss: 0.1084, Acc: 95.91%
+  Batch 150/391, Loss: 0.1781, Acc: 95.70%
+  Batch 200/391, Loss: 0.1889, Acc: 95.61%
+  Batch 250/391, Loss: 0.1238, Acc: 95.49%
+  Batch 300/391, Loss: 0.1207, Acc: 95.43%
+  Batch 350/391, Loss: 0.2236, Acc: 95.30%
+Train Loss: 0.1387, Train Acc: 95.20%
+Test Loss: 0.3919, Test Acc: 89.15%
+Unique weight values per layer: min=13, max=15, avg=14.6
+
+=== Epoch 150/150 (LR: 0.000484) ===
+  Batch 0/391, Loss: 0.1264, Acc: 95.31%
+  Batch 50/391, Loss: 0.1458, Acc: 95.74%
+  Batch 100/391, Loss: 0.1344, Acc: 95.69%
+  Batch 150/391, Loss: 0.2344, Acc: 95.50%
+  Batch 200/391, Loss: 0.0890, Acc: 95.37%
+  Batch 250/391, Loss: 0.1154, Acc: 95.37%
+  Batch 300/391, Loss: 0.0903, Acc: 95.46%
+  Batch 350/391, Loss: 0.1487, Acc: 95.49%
+Train Loss: 0.1320, Train Acc: 95.41%
+Test Loss: 0.3931, Test Acc: 89.01%
+Unique weight values per layer: min=14, max=15, avg=14.6
+
+=== Final Results ===
+Best Test Accuracy: 92.34%
+
+Memory Usage:
+Float32: 12.40 MB
+Int4: 1.55 MB
+Compression ratio: 8.0x
