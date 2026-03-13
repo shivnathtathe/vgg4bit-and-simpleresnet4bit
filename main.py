@@ -1,5 +1,5 @@
-# Copyright (c) 2025 Shivnath Tathe. All rights reserved.
-# This code is licensed for private academic and research use only.
+### Copyright (c) 2025 Shivnath Tathe. All rights reserved.
+#### This code is licensed for private academic and research use only.
 
 import torch
 import torch.nn as nn
@@ -7,6 +7,8 @@ import torch.nn.functional as F
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 import math
+
+# Symmetric quantization with gradient clipping
 
 def quantize_symmetric(tensor, bits=4):
     """Symmetric quantization with gradient clipping"""
@@ -26,7 +28,7 @@ def quantize_symmetric(tensor, bits=4):
 
     return tensor_deq, scale
 
-# ============ 4-bit Convolution Layer ============
+# 4-bit Convolution Layer
 class Conv4bit(nn.Module):
     def __init__(self, in_channels, out_channels, kernel_size, stride=1, padding=0, bias=True):
         super().__init__()
@@ -66,7 +68,7 @@ class Linear4bit(nn.Module):
         w_ste = self.weight + (w_quant - self.weight).detach()
         return F.linear(x, w_ste, self.bias)
 
-# 4-bit VGG
+#4-bit VGG Network
 class VGG4bit(nn.Module):
     def __init__(self, num_classes=10):
         super().__init__()
@@ -115,7 +117,7 @@ class VGG4bit(nn.Module):
         x = self.classifier(x)
         return x
 
-#Simple ResNet
+# Simple ResNet 4-bit Network
 class SimpleResNet4bit(nn.Module):
     def __init__(self, num_classes=10):
         super().__init__()
@@ -180,7 +182,7 @@ class QuantAwareAdamW(torch.optim.AdamW):
                     if len(p.shape) >= 2:  # Weight matrices
                         p.data = torch.tanh(p.data / 3.0) * 3.0
 
-#Training Functions
+#Training & Testing Functions
 def train_epoch(model, loader, optimizer, device, epoch):
     model.train()
     total_loss = 0
@@ -233,7 +235,7 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f'Using device: {device}')
 
-   
+    # Data augmentation for CIFAR-10
     transform_train = transforms.Compose([
         transforms.RandomCrop(32, padding=4),
         transforms.RandomHorizontalFlip(),
@@ -247,14 +249,14 @@ def main():
     ])
 
     # Load CIFAR-10
-    train_dataset = datasets.CIFAR10('./data', train=True, download=True, transform=transform_train)
-    test_dataset = datasets.CIFAR10('./data', train=False, transform=transform_test)
+    train_dataset = datasets.CIFAR100('./data', train=True, download=True, transform=transform_train)
+    test_dataset = datasets.CIFAR100('./data', train=False, transform=transform_test)
 
     train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True, num_workers=2)
     test_loader = DataLoader(test_dataset, batch_size=100, shuffle=False, num_workers=2)
 
     # Model selection
-    print('\n=== 4-bit Training on CIFAR-10 ===')
+    print('\n=== 4-bit Training on CIFAR-100 ===')
     print('Choose model:')
     print('1. SimpleResNet4bit (lighter, faster)')
     print('2. VGG4bit (heavier, potentially more accurate)')
@@ -262,10 +264,10 @@ def main():
     model_choice = input('Enter choice (1 or 2): ').strip()
 
     if model_choice == '2':
-        model = VGG4bit(num_classes=10).to(device)
+        model = VGG4bit(num_classes=100).to(device)
         model_name = 'VGG4bit'
     else:
-        model = SimpleResNet4bit(num_classes=10).to(device)
+        model = SimpleResNet4bit(num_classes=100).to(device)
         model_name = 'SimpleResNet4bit'
 
     print(f'\nUsing {model_name}')
@@ -282,7 +284,8 @@ def main():
 
     # Training loop
     best_acc = 0
-    for epoch in range(100):
+    checkpoint_path = '/content/vgg4bit_checkpoint.pth'
+    for epoch in range(150):  # Less epochs for initial testing
         print(f'\n=== Epoch {epoch+1}/150 (LR: {scheduler.get_last_lr()[0]:.6f}) ===')
 
         train_loss, train_acc = train_epoch(model, train_loader, optimizer, device, epoch)
@@ -310,18 +313,16 @@ def main():
 
         best_acc = max(best_acc, test_acc)
         scheduler.step()
-
-        # Early stopping if we reach good accuracy
-        if test_acc > 90:
-            print(f"\nReached {test_acc:.2f}% accuracy! This is significant for 4-bit training.")
+        if test_acc > 95:
+            print(f"\nReached {test_acc:.2f}% accuracy! Exceptional for 4-bit training.")
             break
 
     print(f'\n=== Final Results ===')
     print(f'Best Test Accuracy: {best_acc:.2f}%')
 
-    # Memory comparison in MB
-    float32_memory = total_params * 4 / (1024**2) 
-    int4_memory = total_params * 0.5 / (1024**2)  
+    # Memory comparison im MB
+    float32_memory = total_params * 4 / (1024**2)
+    int4_memory = total_params * 0.5 / (1024**2)
     print(f'\nMemory Usage:')
     print(f'Float32: {float32_memory:.2f} MB')
     print(f'Int4: {int4_memory:.2f} MB')
