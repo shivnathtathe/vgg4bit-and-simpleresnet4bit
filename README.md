@@ -1,141 +1,106 @@
-# VGG4bit and SimpleResNet4bit: True 4-bit Quantized CNNs for CIFAR-10
+# VGG4bit and SimpleResNet4bit: True 4-Bit Quantized CNNs from Scratch
 
-This project presents **two custom convolutional neural networks** trained from scratch with **true 4-bit symmetric quantization**:
+This project presents custom convolutional neural networks trained **from scratch** with **true 4-bit symmetric quantization** -- no pretrained weights, no GPU required.
 
-- `VGG4bit`: A VGG-style deep CNN architecture  
-- `SimpleResNet4bit`: A ResNet-inspired lightweight design with residual connections
-
----
-
-## 🚀 Revolutionary Achievements
-
-- **88.43% test accuracy** with only 4-bit weights on CIFAR-10
-- **151× memory compression** compared to FP32 VGG
-- **Trained on a 2-core Intel Xeon CPU** (no GPU required!)
-- **$0 training cost** using Google Colab free tier
-- **8× faster convergence** than FP32 on CPU
+- `VGG4bit`: A VGG-style deep CNN, ~3.25M parameters
+- `SimpleResNet4bit`: A lightweight ResNet-inspired design with residual connections, ~73K parameters
 
 ---
 
-## Highlights
+## Results
 
-- **True 4-bit symmetric quantization** using STE (Straight-Through Estimator)
-- Custom 4-bit `Conv2d` and `Linear` layers (no fake quantization or float fallback)
-- Quantization-aware training with **gradient clipping** and **weight soft-clipping**
-- Fully **CPU-trainable**, ideal for low-resource environments
-- **Memory-efficient**: Up to **151× compression** compared to float32
-- Results on CIFAR-10:
- - `VGG4bit`: **88.43% test accuracy**
- - `SimpleResNet4bit`: **82.83% test accuracy** with just **~73k parameters**
+### VGG4bit on CIFAR-10
+
+| Metric | Value |
+|---|---|
+| Best Test Accuracy | **92.34%** (epoch 110) |
+| FP32 Baseline (VGG) | 92.5% |
+| Gap from FP32 | **0.16%** |
+| FP32 Model Size | 12.40 MB |
+| Int4 Model Size | **1.55 MB** |
+| Compression | **8x** |
+| Unique weight values at peak | 15/15 (full grid) |
+| Hardware | Google Colab CPU (Intel Xeon) |
+| Training cost | $0 |
+
+### VGG4bit on CIFAR-100
+
+| Metric | Value |
+|---|---|
+| Best Test Accuracy | **70.94%** (epoch 104) |
+| Classes | 100 |
+| FP32 Model Size | 12.58 MB |
+| Int4 Model Size | **1.57 MB** |
+| Compression | **8x** |
+| Unique weight values at peak | 15/15 (full grid) |
+| Hardware | Google Colab (GPU-assisted) |
+
+### SimpleResNet4bit on CIFAR-10
+
+| Metric | Value |
+|---|---|
+| Parameters | ~73K |
+| Int4 Model Size | ~0.03 MB |
+| Status | Training in progress |
 
 ---
 
-## 📊 Results and Analysis
+## Key Achievements
 
-### Revolutionary 4-bit Training Performance
+- **92.34% on CIFAR-10** -- matches FP32 VGG baseline (92.5%) with only 0.16% gap
+- **70.94% on CIFAR-100** -- same method, 100 classes, trained from random initialization
+- **8x memory compression** over FP32 on both datasets
+- **Full 4-bit grid utilization**: exactly 15/15 unique weight values maintained throughout training
+- **No GPU required** for CIFAR-10 -- runs on free Google Colab CPU tier
+- **Hardware agnostic**: same code runs on x86 (Colab) and ARM (OnePlus 9R mobile)
 
-![Revolutionary 4-bit Training](images/vgg_revolution3.png)
-
-Our 4-bit quantized models achieve remarkable efficiency:
-- **Training Cost**: FREE (using Google Colab) vs $1500 for typical DL setup
-- **Training Time**: 8× faster than FP32 on CPU (2.5h vs 20h)
-- **Computational Efficiency**: 4.5× more efficient than traditional approaches
-
-### Detailed Training Analysis
-
-![Detailed Analysis](images/vgg_per_epocs2.png)
-
-Key observations from training:
-- **Steady accuracy improvement** throughout epochs
-- **Minimal overfitting** with only 1.71% generalization gap
-- **Smooth convergence** with well-behaved loss curves
-
-### World's First Achievement: 88.43% Accuracy
-
-![VGG 4-bit Achievement](images/vgg_train_vs_test_accuracy.png)
-
-- **Peak accuracy**: 88.43% on CIFAR-10 test set
-- **Model size**: Only 0.39MB (151× smaller than FP32 VGG)
-- **Convergence**: 3× faster than SimpleResNet4bit
-- **Training efficiency**: Reaches 85% accuracy in just 11 epochs
-
-### Full Training Results
-
-![VGG 4-bit Full Results](images/vgg_train_vs_test_accuracy.pdf)
-
-Performance comparison:
-- VGG4bit (INT4): 88.43% accuracy with 0.39MB
-- SimpleResNet4bit (INT4): 82.83% accuracy with 0.03MB
-- ResNet-18 (FP32): 87.0% accuracy with 44.0MB
-- VGG-16 (FP32): 89.0% accuracy with 59.0MB
-
-### Efficiency Breakthrough
-
-![Efficiency Comparison](images/88.47.png)
-
-Training characteristics:
-- **Memory usage**: 59MB (VGG4bit) vs 1500MB (VGG-16 FP32)
-- **Training epochs**: Only 30 epochs to reach peak performance
-- **Hardware**: Intel Xeon CPU @ 2.20GHz (2 cores)
-- **Framework**: PyTorch (CPU-only)
-
-### Sample Predictions
-
-![Sample Predictions](images/STL-Pred.png)
-
-The 4-bit model demonstrates robust classification capabilities across various CIFAR-10 categories with high confidence scores.
-
-### Training Progress Visualization
-
-![Training Progress](images/100_STL-10_loss_aacuracy.png)
-
-- Smooth loss convergence
-- Steady accuracy improvement
-- Minimal generalization gap after epoch 60
-
-### Training Summary
-
-![Training Summary](images/matrix.png)
-
-Final statistics:
-- **Initial accuracy**: 38.67% → **Final accuracy**: 84.29% (train), 82.58% (test)
-- **Best performance**: 82.85% test accuracy at epoch 96
-- **Model efficiency**: 95.3% quantization utilization
-- **Parameters**: Only 73,178 (8× compression)
-
-### Detailed Training Metrics
-
-![Training Metrics](images/train_test_loss.png)
-
-The training shows:
-- Excellent convergence with cosine annealing LR schedule
-- Low final generalization gap (1.71%)
-- Stable training after epoch 60
-- Progressive accuracy improvement across training phases
-
-### Additional Visualizations
-
-![Download Comparison](images/download.png)
+---
 
 ## Architecture Comparison
 
-| Model              | Params   | Accuracy (CIFAR-10) | Float32 Size | 4-bit Size | Compression |
-|-------------------|----------|---------------------|--------------|------------|-------------|
-| `VGG4bit`          | ~3.25M   | 88.43%              | ~59.0 MB     | ~0.39 MB   | 151×        |
-| `SimpleResNet4bit` | ~73K     | 82.83%              | ~0.28 MB     | ~0.03 MB   | 8×          |
-| ResNet-18 (FP32)   | ~11M     | 87.00%              | ~44.0 MB     | -          | -           |
-| VGG-16 (FP32)      | ~15M     | 89.00%              | ~59.0 MB     | -          | -           |
+| Model | Params | CIFAR-10 Acc | CIFAR-100 Acc | FP32 Size | Int4 Size | Compression |
+|---|---|---|---|---|---|---|
+| `VGG4bit` (ours) | 3.25M | **92.34%** | **70.94%** | 12.40 MB | 1.55 MB | 8x |
+| `SimpleResNet4bit` (ours) | 73K | in progress | - | ~0.28 MB | ~0.03 MB | 8x |
+| DoReFa-Net (4-bit, GPU) | - | 85-88% | - | - | - | - |
+| VGG-16 FP32 (baseline) | ~15M | 92.5% | - | ~59 MB | - | - |
 
 ---
 
-## 🌟 Key Achievements
+## Method
 
-1. **State-of-the-art 4-bit accuracy**: 88.43% on CIFAR-10
-2. **Democratizes deep learning**: No GPU, TPU, or special hardware needed
-3. **Ultra-efficient**: Can run on mobile/edge devices
-4. **Fast training**: 8× faster than FP32 on CPU
-5. **Minimal resources**: ~400MB RAM, 2-core CPU sufficient
-6. **Free training**: $0 cost using Google Colab
+Three components work together to enable stable 4-bit training from scratch:
+
+1. **Symmetric 4-bit quantization** with STE (Straight-Through Estimator) -- forward pass uses quantized weights, backward pass uses full-precision gradients
+2. **Trainable per-layer clipping** -- each layer learns its own optimal quantization range
+3. **Tanh-based soft weight clipping** (key innovation) -- applied after each optimizer step:
+
+```
+W = 3.0 * tanh(W / 3.0)
+```
+
+This prevents gradient explosion while maintaining smooth gradient flow, unlike hard clipping which zeros gradients at boundaries.
+
+---
+
+## Training Details
+
+- **Optimizer**: Custom QuantAwareAdamW (AdamW + gradient clipping + tanh soft clipping)
+- **LR Schedule**: Cosine annealing with warm restarts over 150 epochs
+- **Batch size**: 128
+- **Data augmentation**: Random crop (32x32, padding=4), random horizontal flip
+
+**Note on CIFAR-100**: The LR warm restart after epoch 104 caused accuracy to drop from 70.94% to 63.68% by epoch 150. The quantization itself remained stable (15/15 unique values held). This is a scheduler sensitivity issue, not a quantization failure. Using a non-restarting cosine schedule would preserve the 70.94% peak.
+
+---
+
+## Training Curves
+
+![CIFAR-10 Convergence](results/training_curve.png)
+
+![CIFAR-100 Convergence](results/cifar100_curve.png)
+
+![Tanh vs Hard Clipping](results/tanh_clipping.png)
 
 ---
 
@@ -143,7 +108,6 @@ The training shows:
 
 ```bash
 pip install -r requirements.txt
-
 ```
 
 ## Usage
@@ -151,26 +115,35 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
 The script will prompt you to choose:
+- `1` for SimpleResNet4bit (lightweight)
+- `2` for VGG4bit (heavier, more accurate)
 
-1 for SimpleResNet4bit (lightweight)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1F0HziLzVtOQWFG0efaepXdVisHfHBBJt?usp=sharing)
 
-2 for VGG4bit (heavier, more accurate)
+---
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/drive/1F0HziLzVtOQWFG0efaepXdVisHfHBBJt?usp=sharing)
+## Notes
 
+- CIFAR-10 trained on CPU only. CIFAR-100 used GPU-assisted Colab run.
+- Best performance at 90-120 epochs with cosine annealing.
+- All quantization is true 4-bit (no fake quantization), training uses real STE gradients.
+- Memory benchmarks computed on parameter-only compression.
 
-# 📌 Notes  
-- Designed for CIFAR-10. For other datasets, minimal changes to data preprocessing and model input shape are needed.  
-- Best performance observed after 90–120 epochs with cosine annealing LR scheduler.  
-- Memory benchmarks computed assuming parameter-only compression.  
-- All quantization is true 4-bit (no fake quantization), and training uses real STE gradients.
+---
 
-# 📜 License  
-Copyright (c) 2025 Shivnath Tathe  
-All rights reserved.  
-This code is distributed for private academic and research purposes only.  
+## Research Paper
+
+Full details in: `paper/True4bit_CPU_Quantization_ShivnathTathe_Draft.pdf`
+
+---
+
+## License
+
+Copyright (c) 2025 Shivnath Tathe
+All rights reserved.
+This code is distributed for private academic and research purposes only.
 Redistribution, reproduction, or commercial use is strictly prohibited without explicit written permission.
 
-📧 Contact for collaboration or permission: sptathe2001@gmail.com
+Contact: sptathe2001@gmail.com
