@@ -167,6 +167,9 @@ CIFAR-10/100 datasets download automatically on first run.
   <em>Tanh soft clipping vs hard clipping: smoother gradient flow, better convergence</em>
 </p>
 
+
+*CIFAR-10 was trained on CPU to demonstrate hardware independence. CIFAR-100 used GPU for faster iteration. The method is hardware-agnostic -- same code runs on CPU, GPU, or mobile without modification.
+
 ---
 
 ## Project Structure
